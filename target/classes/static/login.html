@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Login</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="/css/bootstrap/3.3.6/bootstrap.css">
+    <link rel="stylesheet" href="/css/background/demo.css"/>
+    <link rel="stylesheet" href="/css/background/templatemo-style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/bootstrap/3.3.6/bootstrap.js"></script>
+    <script src="/js/background/modernizr.custom.86080.js"></script>
+
+    <style>
+
+        .login {
+            margin-top: 180px;
+            width:70%;
+        }
+
+        @media (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+            .login {
+                margin-top:50px;
+            }
+
+        }
+
+        .login-form {
+            padding: 0 20px;
+        }
+
+        .modal-content {
+            padding-bottom: 20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+<ul class="cb-slideshow">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<!-- background area end-->
+
+<!-- navigation bar -->
+
+<main role="main">
+
+    <div class="login container">
+        <div class="row " >
+            <div class="col-md-3"></div>
+            <div class="col col-md-6 vcenter" style="z-index:9999">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title">Login</h4>
+                    </div>
+                        <form action="admin/login" class="login-form" novalidate="novalidate" method="post">
+
+                            <div class="form-group">
+                                <label >Email</label>
+                                <div class="input-group" style="width:100%">
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-user"></span>
+                                </span>
+                                    <input type="email" name="username" class="form-control"  placeholder="Email" id="loginEmail" >
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Password</label>
+                                <div class="input-group" style="width:100%">
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-lock"></span>
+                                </span>
+                                    <input type="password" name="password" class="form-control"  placeholder="Password"  id="LoginPassword" >
+                                </div>
+                            </div>
+
+                            <button type="submit" id="btnLogin" class="btn btn-danger"
+                                    style="width: 100%; text-align: center">Login</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+</body>
+
+<script src="/js/background/particles.js"></script>
+<script src="/js/background/app.js"></script>
+
+</html>
+

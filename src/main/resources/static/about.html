@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Juncheng Li</title>
+
+    <!-- 引入 JQ 和 Bootstrap -->
+    <script src="js/jquery/2.0.0/jquery.min.js"></script>
+    <link href="css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap/3.3.6/bootstrap.min.js"></script>
+    <!-- 引入自己的CSS -->
+    <link href="css/about.css" rel="stylesheet"/>
+</head>
+
+<body>
+
+<!--引入头部-->
+<script language="javascript" type="text/javascript" src="js/header.js"></script>
+<!--题图-->
+<img id="titu" src="img/about/titu.jpg"/>
+<!--主体内容-->
+<div id="content">
+
+    <!-- 关于信息 -->
+    <div class="aboutInfo">
+        <div class="leftInfo">
+            <img src="img/head.jpg">
+            <h2>Juncheng Li</h2>
+            <h4>UCD</h4>
+        </div>
+        <div class="rightInfo">
+            <!--<h2>博客搭建流程：</h2>-->
+            <!--<div class="aboutArticle">-->
+                <!--<div class="title">-->
+                    <!--<a href="https://www.jianshu.com/p/0293368fe750">SpringBoot技术栈搭建个人博客【项目准备】</a>-->
+                <!--</div>-->
+                <!--<div class="summary">-->
+                    <!--项目准备包括需求分析、数据库设计、原型设计、项目搭建、RESTful APIs设计-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+    </div>
+    <!-- /. END ABOUT INFO -->
+
+
+    <div style="margin-top: 60px;">
+        <label>Comments：</label>
+    </div>
+    <div id="commentList" class="commentList">
+    </div>
+    <!-- /. END COMMENT LIST -->
+
+    <!--create a comment-->
+    <div class="comment">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                create a comment
+            </div>
+            <div class="panel-body">
+                <label>Name:</label>
+                <input id="commentName" class="form-control"/>
+                <label>Email:</label>
+                <input id="commentEmail" class="form-control">
+                <label>Comment:</label>
+                <textarea id="commentContent" rows="3" class="form-control"></textarea><br/>
+                <div class="text-right">
+                    <button id="addComment" class="btn btn-success">Submit</button>
+                </div>
+            </div>
+            <!-- /. END PANEL-BODY -->
+        </div>
+        <!-- /. END PANEL -->
+    </div>
+    <!-- /. END COMMENT -->
+
+    <!-- cannot be empty - MODAL -->
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header alert-success">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Tip:</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label>Name and Content cannot be empty, I hope you can also leave your email</label>
+                        </div>
+                    </div>
+                    <!-- /. END RWO -->
+                </div>
+                <!-- /. END MODAL BODY -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- /. END MODAL -->
+
+    <!-- add successfully MODAL -->
+    <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header alert-success">
+                    <h4 class="modal-title">System</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label>Add Successfully</label>
+                        </div>
+                    </div>
+                    <!-- /. END RWO -->
+                </div>
+                <!-- /. END MODAL BODY -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" id="addConfirmBtn">Thanks for Support</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- /. END MODAL -->
+</div>
+
+<!--footer-->
+<!--<script language="javascript" type="text/javascript" src="js/footer.js"></script>-->
+</body>
+
+</html>
