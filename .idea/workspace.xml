@@ -2,27 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dea1085d-08d7-45f2-bb0f-936f151182ce" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/banner.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/about.html" afterPath="$PROJECT_DIR$/src/main/resources/static/about.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/article.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/article.css" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/index.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/index.css" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/error/404.html" afterPath="$PROJECT_DIR$/src/main/resources/static/error/404.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/about/titu.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/blog-logo.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/header.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/header.js" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/resume.html" afterPath="$PROJECT_DIR$/src/main/resources/static/Note.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/banner.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log/wmyskxz/logback.2018-10-31.log" afterPath="$PROJECT_DIR$/target/classes/log/wmyskxz/logback.2018-10-31.log" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/about.html" afterPath="$PROJECT_DIR$/target/classes/static/about.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/article.css" afterPath="$PROJECT_DIR$/target/classes/static/css/article.css" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/index.css" afterPath="$PROJECT_DIR$/target/classes/static/css/index.css" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/error/404.html" afterPath="$PROJECT_DIR$/target/classes/static/error/404.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/about/titu.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/blog-logo.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" afterPath="$PROJECT_DIR$/target/classes/static/index.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/header.js" afterPath="$PROJECT_DIR$/target/classes/static/js/header.js" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/resume.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Note.html" afterPath="$PROJECT_DIR$/src/main/resources/static/note.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/login.html" afterPath="$PROJECT_DIR$/src/main/resources/static/login.html" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/login.html" afterPath="$PROJECT_DIR$/target/classes/static/login.html" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,7 +34,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="61" column="24" lean-forward="true" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="36" />
+              <caret line="61" column="24" lean-forward="false" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -67,11 +50,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="343">
-              <caret line="80" column="14" lean-forward="true" selection-start-line="80" selection-start-column="14" selection-end-line="80" selection-end-column="14" />
+              <caret line="80" column="14" lean-forward="false" selection-start-line="80" selection-start-column="14" selection-end-line="80" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="40" column="31" lean-forward="false" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -127,6 +120,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/static/about.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/css/index.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/login.html" />
       </list>
     </option>
   </component>
@@ -144,8 +138,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="48" />
-    <option name="y" value="86" />
+    <option name="x" value="75" />
+    <option name="y" value="23" />
     <option name="width" value="1475" />
     <option name="height" value="877" />
   </component>
@@ -188,30 +182,6 @@
               <item name="Blog" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -221,52 +191,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="error" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-              <item name="about" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -435,15 +359,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1541015470188</updated>
-      <workItem from="1541015471488" duration="4537000" />
+      <workItem from="1541015471488" duration="5121000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4537000" />
+    <option name="totallyTimeSpent" value="5121000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="48" y="86" width="1475" height="877" extended-state="1" />
+    <frame x="75" y="23" width="1475" height="877" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -656,7 +580,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="61" column="24" lean-forward="true" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="36" />
+          <caret line="61" column="24" lean-forward="false" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -664,7 +588,15 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
-          <caret line="80" column="14" lean-forward="true" selection-start-line="80" selection-start-column="14" selection-end-line="80" selection-end-column="14" />
+          <caret line="80" column="14" lean-forward="false" selection-start-line="80" selection-start-column="14" selection-end-line="80" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="40" column="31" lean-forward="false" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
           <folding />
         </state>
       </provider>
