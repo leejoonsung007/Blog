@@ -1,119 +1,157 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>错误页面</title>
-
+    <meta charset="utf-8">
+    <title>Page Not Found :(</title>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font: 14px/1.6 5FAE8F6F96C59ED1, Arial, Sans-serif;
-            background: #fff;
+        ::-moz-selection {
+            background: #b3d4fc;
+            text-shadow: none;
+        }
+
+        ::selection {
+            background: #b3d4fc;
+            text-shadow: none;
+        }
+
+        html {
+            padding: 30px 10px;
+            font-size: 20px;
+            line-height: 1.4;
+            color: #737373;
+            background: #f0f0f0;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        html,
+        input {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         }
 
         body {
-            font-family: "微软雅黑";
+            max-width: 500px;
+            _width: 500px;
+            padding: 30px 20px 50px;
+            border: 1px solid #b3b3b3;
+            border-radius: 4px;
+            margin: 0 auto;
+            box-shadow: 0 1px 10px #a7a7a7, inset 0 1px 0 #fff;
+            background: #fcfcfc;
         }
 
-        a:link,
-        a:visited {
-            color: #3986c8;
-            text-decoration: none;
-        }
-        .topimg{
-            width: 580px;
-            margin: 110px auto 15px auto;
+        h1 {
+            margin: 0 10px;
+            font-size: 50px;
+            text-align: center;
         }
 
-        .topimg img{
-            width: 580px;
+        h1 span {
+            color: #bbb;
         }
 
-        /*.topimg {
-            position: relative;
-            z-index: 2;
-            width: 580px;
-            height: 0;
-            margin: 110px auto 15px;
-            padding: 230px 0 0;
-            overflow: hidden;
-            background-image: url(img/404.png);
-            background-repeat: no-repeat;
-        }*/
-
-        .words {
-            position: absolute;
-            top: 55px;
-            left: 233px;
-            margin: 0;
-            font-size: 0;
-            text-indent: -999px;
-            -moz-user-select: none;
-            -webkit-user-select: none;
-            user-select: none;
-            cursor: default;
-            width: 404px;
-            height: 90px;
+        h3 {
+            margin: 1.5em 0 0.5em;
         }
 
-        .words em {
-            display: block;
-            text-indent: 0;
-            letter-spacing: -5px;
-            color: rgba(216, 226, 244, 0.3);
+        p {
+            margin: 1em 0;
         }
 
-        .words em span {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 65px;
+        ul {
+            padding: 0 0 0 40px;
+            margin: 1em 0;
         }
 
-        .link a {
-            margin-right: 1em;
+        .container {
+            max-width: 380px;
+            _width: 380px;
+            margin: 0 auto;
         }
 
-        .link,
-        .texts {
-            width: 540px;
-            margin: 0 auto 15px;
-            color: #505050;
-        }
+        /* google search */
 
-        .texts {
-            line-height: 2;
-        }
-
-        .texts dd {
-            margin: 0;
-            padding: 0 0 0 15px;
-        }
-
-        .texts ul {
-            margin: 0;
+        #goog-fixurl ul {
+            list-style: none;
             padding: 0;
+            margin: 0;
+        }
+
+        #goog-fixurl form {
+            margin: 0;
+        }
+
+        #goog-wm-qt,
+        #goog-wm-sb {
+            border: 1px solid #bbb;
+            font-size: 16px;
+            line-height: normal;
+            vertical-align: top;
+            color: #444;
+            border-radius: 2px;
+        }
+
+        #goog-wm-qt {
+            width: 220px;
+            height: 20px;
+            padding: 5px;
+            margin: 5px 10px 0 0;
+            box-shadow: inset 0 1px 1px #ccc;
+        }
+
+        #goog-wm-sb {
+            display: inline-block;
+            height: 32px;
+            padding: 0 10px;
+            margin: 5px 0 0;
+            white-space: nowrap;
+            cursor: pointer;
+            background-color: #f5f5f5;
+            background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), #f1f1f1);
+            background-image: -moz-linear-gradient(rgba(255, 255, 255, 0), #f1f1f1);
+            background-image: -ms-linear-gradient(rgba(255, 255, 255, 0), #f1f1f1);
+            background-image: -o-linear-gradient(rgba(255, 255, 255, 0), #f1f1f1);
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            *overflow: visible;
+            *display: inline;
+            *zoom: 1;
+        }
+
+        #goog-wm-sb:hover,
+        #goog-wm-sb:focus {
+            border-color: #aaa;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+            background-color: #f8f8f8;
+        }
+
+        #goog-wm-qt:hover,
+        #goog-wm-qt:focus {
+            border-color: #105cb6;
+            outline: 0;
+            color: #222;
+        }
+
+        input::-moz-focus-inner {
+            padding: 0;
+            border: 0;
         }
     </style>
 </head>
-
 <body>
-<p class="topimg"><img src="https://upload-images.jianshu.io/upload_images/7896890-2bec477df48e692d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"> </p>
-<p class="link">
-    <a href="index.html" target="_self">&#9666;返回首页</a>
-    <a target="_self" href="javascript:;" onClick="javascript:history.back(-1);">&#9666;返回上一页</a>
-</p>
-<dl class="texts">
-
-    <dd>
-        <ul>
-            <li>不要返回吗 ?</li>
-            <li>确定不要返回吗 ?</li>
-            <li>真的真的确定不要返回吗 ?</li>
-            <li>好吧.还是随便你要不要真的确定返回吧 ! ~</li>
-        </ul>
-    </dd>
-</dl>
+<div class="container">
+    <h1>Not found <span>:(</span></h1>
+    <p>Sorry, but the page you were trying to view does not exist.</p>
+    <p>It looks like this was the result of either:</p>
+    <ul>
+        <li>a mistyped address</li>
+        <li>an out-of-date link</li>
+    </ul>
+    <script>
+        var GOOG_FIXURL_LANG = (navigator.language || '').slice(0, 2), GOOG_FIXURL_SITE = location.host;
+    </script>
+    <script src="http://linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js"></script>
+</div>
 </body>
-
 </html>

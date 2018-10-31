@@ -10,14 +10,14 @@ body {
 }
 
 #articlePicture img {
-    height: 640px;
+    height: 500px;
     object-fit: cover;
     width: 100%;
 }
 
 .smallArticlePictures {
     right: 6%;
-    top: 620px;
+    top: 400px;
     position: absolute;
     width: 600px;
     height: 110px;
@@ -52,7 +52,7 @@ body {
     position: absolute;
     width: 50%;
     left: 16%;
-    top: 400px;
+    top: 300px;
     color: #000000;
 }
 
@@ -77,3 +77,9 @@ body {
     color: rgb(198, 198, 198);
     font-size: 12px;
 }
+
+.learningNote{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+

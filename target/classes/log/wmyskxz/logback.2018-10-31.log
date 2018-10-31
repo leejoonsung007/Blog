@@ -20615,3 +20615,438 @@ java.lang.IndexOutOfBoundsException: Index 0 out-of-bounds for length 0
 19:35:20.394 logback [Thread-8] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
 19:35:20.394 logback [Thread-8] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
 19:35:20.407 logback [Thread-8] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+19:35:25.432 logback [restartedMain] INFO  com.springboot.blog.BlogApplication - Starting BlogApplication on LeejoonsungdeMacBook-Pro.local with PID 5534 (/Users/leejoonsung/Downloads/MyBlog-master/target/classes started by leejoonsung in /Users/leejoonsung/Downloads/MyBlog-master)
+19:35:25.433 logback [restartedMain] INFO  com.springboot.blog.BlogApplication - No active profile set, falling back to default profiles: default
+19:35:25.499 logback [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@35e203a3: startup date [Wed Oct 31 19:35:25 GMT 2018]; root of context hierarchy
+19:35:26.990 logback [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f391da10] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:35:27.325 logback [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+19:35:27.336 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+19:35:27.344 logback [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+19:35:27.344 logback [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+19:35:27.348 logback [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/leejoonsung/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+19:35:27.403 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+19:35:27.404 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1904 ms
+19:35:27.531 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+19:35:27.532 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet statViewServlet mapped to [/druid/*]
+19:35:27.535 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+19:35:27.535 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+19:35:27.536 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+19:35:27.536 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+19:35:27.536 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+19:35:27.536 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'simpleCORSFilter' to: [/*]
+19:35:27.616 logback [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+19:35:28.233 logback [restartedMain] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+19:35:28.695 logback [restartedMain] INFO  o.s.aop.framework.CglibAopProxy - Method [java.util.List springfox.documentation.schema.property.OptimizedModelPropertiesProvider.candidateProperties(com.fasterxml.classmate.ResolvedType,com.fasterxml.jackson.databind.introspect.AnnotatedMember,com.fasterxml.jackson.databind.introspect.BeanPropertyDefinition,springfox.documentation.spi.schema.contexts.ModelContext)] is package-visible across different ClassLoaders and cannot get proxied via CGLIB: Declare this method as public or protected if you need to support invocations through the proxy.
+19:35:28.828 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String com.springboot.blog.controller.BackController.login(com.springboot.blog.entity.User,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+19:35:28.829 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/article/],methods=[POST]}" onto public java.lang.String com.springboot.blog.controller.BackController.addArticle(com.springboot.blog.dto.ArticleDto)
+19:35:28.829 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/article/{id}],methods=[DELETE]}" onto public java.lang.String com.springboot.blog.controller.BackController.deleteArticle(java.lang.Long)
+19:35:28.829 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/article/{id}],methods=[PUT]}" onto public java.lang.String com.springboot.blog.controller.BackController.updateArticle(java.lang.Long,com.springboot.blog.dto.ArticleDto)
+19:35:28.829 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/article/sort/{id}],methods=[PUT]}" onto public java.lang.String com.springboot.blog.controller.BackController.changeArticleCategory(java.lang.Long,java.lang.Long)
+19:35:28.830 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/article/picture/{id}],methods=[PUT]}" onto public java.lang.String com.springboot.blog.controller.BackController.updateArticlePicture(java.lang.Long,java.lang.String)
+19:35:28.830 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/category],methods=[POST]}" onto public java.lang.String com.springboot.blog.controller.BackController.addCategoryInfo(com.springboot.blog.entity.CategoryInfo)
+19:35:28.830 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/category/{id}],methods=[PUT]}" onto public java.lang.String com.springboot.blog.controller.BackController.updateCategoryInfo(java.lang.Long,com.springboot.blog.entity.CategoryInfo)
+19:35:28.830 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/category/{id}],methods=[DELETE]}" onto public java.lang.String com.springboot.blog.controller.BackController.deleteCategoryInfo(java.lang.Long)
+19:35:28.831 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/category/{id}],methods=[GET]}" onto public com.springboot.blog.entity.CategoryInfo com.springboot.blog.controller.BackController.getCategoryInfo(java.lang.Long)
+19:35:28.831 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/comment/article/{id}],methods=[DELETE]}" onto public java.lang.String com.springboot.blog.controller.BackController.deleteArticleComment(java.lang.Long)
+19:35:28.831 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/comment/{id}],methods=[DELETE]}" onto public java.lang.String com.springboot.blog.controller.BackController.deleteComment(java.lang.Long)
+19:35:28.831 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/comment/reply/{id}],methods=[GET]}" onto public java.lang.String com.springboot.blog.controller.BackController.replyComment(java.lang.Long)
+19:35:28.832 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/comment/{id}],methods=[GET]}" onto public com.springboot.blog.entity.Comment com.springboot.blog.controller.BackController.getCommentById(java.lang.Long)
+19:35:28.832 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/article/{id}],methods=[GET]}" onto public com.springboot.blog.dto.ArticleDto com.springboot.blog.controller.BackController.getArticleDtoById(java.lang.Long)
+19:35:28.834 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/article/list],methods=[GET]}" onto public java.util.List<com.springboot.blog.dto.ArticleWithPictureDto> com.springboot.blog.controller.ForeController.listAllArticleInfo()
+19:35:28.835 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/article/list/sort/{id}],methods=[GET]}" onto public java.util.List<com.springboot.blog.dto.ArticleWithPictureDto> com.springboot.blog.controller.ForeController.listArticleInfo(java.lang.Long)
+19:35:28.835 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/article/list/latest],methods=[GET]}" onto public java.util.List<com.springboot.blog.dto.ArticleWithPictureDto> com.springboot.blog.controller.ForeController.listLastestArticle()
+19:35:28.835 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/article/{id}],methods=[GET]}" onto public com.springboot.blog.dto.ArticleDto com.springboot.blog.controller.ForeController.getArticleById(java.lang.Long)
+19:35:28.835 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/category/list],methods=[GET]}" onto public java.util.List<com.springboot.blog.entity.CategoryInfo> com.springboot.blog.controller.ForeController.listAllCategoryInfo()
+19:35:28.836 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/comment/list],methods=[GET]}" onto public java.util.List<com.springboot.blog.entity.Comment> com.springboot.blog.controller.ForeController.listAllComment()
+19:35:28.836 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/comment/article/{id}],methods=[GET]}" onto public java.util.List<com.springboot.blog.dto.ArticleCommentDto> com.springboot.blog.controller.ForeController.listMessageByArticleId(java.lang.Long)
+19:35:28.837 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/comment/article/{id}],methods=[POST]}" onto public java.lang.String com.springboot.blog.controller.ForeController.addArticleComment(java.lang.Long,com.springboot.blog.dto.ArticleCommentDto,javax.servlet.http.HttpServletRequest)
+19:35:28.837 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/comment],methods=[POST]}" onto public java.lang.String com.springboot.blog.controller.ForeController.addMessage(com.springboot.blog.entity.Comment,javax.servlet.http.HttpServletRequest)
+19:35:28.838 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/sys/log],methods=[GET]}" onto public java.util.List<com.springboot.blog.entity.SysLog> com.springboot.blog.controller.SysController.listAllLog()
+19:35:28.838 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/sys/view],methods=[GET]}" onto public java.util.List<com.springboot.blog.entity.SysView> com.springboot.blog.controller.SysController.listAllView()
+19:35:28.839 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+19:35:28.842 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+19:35:28.842 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+19:35:28.843 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+19:35:28.845 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+19:35:28.845 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+19:35:28.993 logback [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19:35:29.142 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@35e203a3: startup date [Wed Oct 31 19:35:25 GMT 2018]; root of context hierarchy
+19:35:29.167 logback [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/toLogin] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+19:35:29.190 logback [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19:35:29.190 logback [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19:35:29.239 logback [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+19:35:29.447 logback [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+19:35:29.490 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+19:35:29.493 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+19:35:29.493 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+19:35:29.499 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+19:35:29.500 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+19:35:29.513 logback [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+19:35:29.524 logback [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found {0} custom documentation plugin(s)
+19:35:29.531 logback [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+19:35:29.534 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method addArticle was back-controller
+19:35:29.535 logback [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: addArticle belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=com.springboot.blog.controller.BackController}]] 
+19:35:29.536 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method updateArticlePicture was back-controller
+19:35:29.536 logback [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: updateArticlePicture belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=com.springboot.blog.controller.BackController}]] 
+19:35:29.537 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method changeArticleCategory was back-controller
+19:35:29.537 logback [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: changeArticleCategory belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=com.springboot.blog.controller.BackController}]] 
+19:35:29.537 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method deleteArticle was back-controller
+19:35:29.537 logback [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: deleteArticle belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=com.springboot.blog.controller.BackController}]] 
+19:35:29.538 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method updateArticle was back-controller
+19:35:29.538 logback [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: updateArticle belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=com.springboot.blog.controller.BackController}]] 
+19:35:29.538 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getArticleDtoById was back-controller
+19:35:29.538 logback [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getArticleDtoById belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=com.springboot.blog.controller.BackController}]] 
+19:35:29.539 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method updateCategoryInfo was back-controller
+19:35:29.539 logback [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: updateCategoryInfo belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=com.springboot.blog.controller.BackController}]] 
+19:35:29.539 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method deleteCategoryInfo was back-controller
+19:35:29.539 logback [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: deleteCategoryInfo belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=com.springboot.blog.controller.BackController}]] 
+19:35:29.539 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getCategoryInfo was back-controller
+19:35:29.540 logback [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getCategoryInfo belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=com.springboot.blog.controller.BackController}]] 
+19:35:29.540 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method addCategoryInfo was back-controller
+19:35:29.540 logback [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: addCategoryInfo belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=com.springboot.blog.controller.BackController}]] 
+19:35:29.540 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method deleteArticleComment was back-controller
+19:35:29.540 logback [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: deleteArticleComment belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=com.springboot.blog.controller.BackController}]] 
+19:35:29.541 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method replyComment was back-controller
+19:35:29.541 logback [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: replyComment belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=com.springboot.blog.controller.BackController}]] 
+19:35:29.541 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method deleteComment was back-controller
+19:35:29.541 logback [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: deleteComment belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=com.springboot.blog.controller.BackController}]] 
+19:35:29.541 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getCommentById was back-controller
+19:35:29.541 logback [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getCommentById belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=com.springboot.blog.controller.BackController}]] 
+19:35:29.542 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method login was back-controller
+19:35:29.542 logback [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: login belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=com.springboot.blog.controller.BackController}]] 
+19:35:29.542 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method listAllLog was sys-controller
+19:35:29.542 logback [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: listAllLog belongs to groups: [[ResourceGroup{groupName='sys-controller', position=0, controller=com.springboot.blog.controller.SysController}]] 
+19:35:29.542 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method listAllView was sys-controller
+19:35:29.542 logback [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: listAllView belongs to groups: [[ResourceGroup{groupName='sys-controller', position=0, controller=com.springboot.blog.controller.SysController}]] 
+19:35:29.543 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method listLastestArticle was fore-controller
+19:35:29.543 logback [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: listLastestArticle belongs to groups: [[ResourceGroup{groupName='fore-controller', position=0, controller=com.springboot.blog.controller.ForeController}]] 
+19:35:29.543 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method listArticleInfo was fore-controller
+19:35:29.543 logback [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: listArticleInfo belongs to groups: [[ResourceGroup{groupName='fore-controller', position=0, controller=com.springboot.blog.controller.ForeController}]] 
+19:35:29.543 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method listAllArticleInfo was fore-controller
+19:35:29.544 logback [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: listAllArticleInfo belongs to groups: [[ResourceGroup{groupName='fore-controller', position=0, controller=com.springboot.blog.controller.ForeController}]] 
+19:35:29.544 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getArticleById was fore-controller
+19:35:29.544 logback [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getArticleById belongs to groups: [[ResourceGroup{groupName='fore-controller', position=0, controller=com.springboot.blog.controller.ForeController}]] 
+19:35:29.544 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method listAllCategoryInfo was fore-controller
+19:35:29.544 logback [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: listAllCategoryInfo belongs to groups: [[ResourceGroup{groupName='fore-controller', position=0, controller=com.springboot.blog.controller.ForeController}]] 
+19:35:29.544 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method listMessageByArticleId was fore-controller
+19:35:29.545 logback [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: listMessageByArticleId belongs to groups: [[ResourceGroup{groupName='fore-controller', position=0, controller=com.springboot.blog.controller.ForeController}]] 
+19:35:29.545 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method addArticleComment was fore-controller
+19:35:29.545 logback [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: addArticleComment belongs to groups: [[ResourceGroup{groupName='fore-controller', position=0, controller=com.springboot.blog.controller.ForeController}]] 
+19:35:29.545 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method listAllComment was fore-controller
+19:35:29.545 logback [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: listAllComment belongs to groups: [[ResourceGroup{groupName='fore-controller', position=0, controller=com.springboot.blog.controller.ForeController}]] 
+19:35:29.546 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method addMessage was fore-controller
+19:35:29.546 logback [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: addMessage belongs to groups: [[ResourceGroup{groupName='fore-controller', position=0, controller=com.springboot.blog.controller.ForeController}]] 
+19:35:29.548 logback [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/back-controller Description: back-controller Position: 0
+19:35:29.549 logback [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/fore-controller Description: fore-controller Position: 0
+19:35:29.549 logback [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/sys-controller Description: sys-controller Position: 0
+19:35:29.567 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+19:35:29.567 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.String(true)
+19:35:29.572 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+19:35:29.573 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+19:35:29.576 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.springboot.blog.dto.ArticleDto(false)
+19:35:29.577 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key com.springboot.blog.dto.ArticleDto(false)
+19:35:29.578 logback [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.springboot.blog.dto.ArticleDto(false)
+19:35:29.578 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.springboot.blog.dto.ArticleDto(false)
+19:35:29.609 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.springboot.blog.dto.ArticleDto(false)
+19:35:29.609 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key com.springboot.blog.dto.ArticleDto(false)
+19:35:29.609 logback [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.springboot.blog.dto.ArticleDto(false)
+19:35:29.609 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.springboot.blog.dto.ArticleDto(false)
+19:35:29.610 logback [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /admin/article/.com.springboot.blog.controller.BackController.addArticle.DefaultGenericTypeNamingStrategy
+19:35:29.611 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /admin/article/.com.springboot.blog.controller.BackController.addArticle.DefaultGenericTypeNamingStrategy
+19:35:29.623 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method addArticle was back-controller
+19:35:29.633 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method addArticle was back-controller
+19:35:29.640 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+19:35:29.640 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.String(true)
+19:35:29.640 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+19:35:29.640 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+19:35:29.640 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.springboot.blog.entity.CategoryInfo(false)
+19:35:29.640 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key com.springboot.blog.entity.CategoryInfo(false)
+19:35:29.640 logback [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.springboot.blog.entity.CategoryInfo(false)
+19:35:29.640 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.springboot.blog.entity.CategoryInfo(false)
+19:35:29.642 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.springboot.blog.entity.CategoryInfo(false)
+19:35:29.642 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key com.springboot.blog.entity.CategoryInfo(false)
+19:35:29.642 logback [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.springboot.blog.entity.CategoryInfo(false)
+19:35:29.642 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.springboot.blog.entity.CategoryInfo(false)
+19:35:29.643 logback [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /admin/category.com.springboot.blog.controller.BackController.addCategoryInfo.DefaultGenericTypeNamingStrategy
+19:35:29.643 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /admin/category.com.springboot.blog.controller.BackController.addCategoryInfo.DefaultGenericTypeNamingStrategy
+19:35:29.644 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method addCategoryInfo was back-controller
+19:35:29.645 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method addCategoryInfo was back-controller
+19:35:29.648 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+19:35:29.648 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.String(true)
+19:35:29.648 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+19:35:29.648 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+19:35:29.648 logback [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /admin/article/sort/{id}.com.springboot.blog.controller.BackController.changeArticleCategory.DefaultGenericTypeNamingStrategy
+19:35:29.648 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /admin/article/sort/{id}.com.springboot.blog.controller.BackController.changeArticleCategory.DefaultGenericTypeNamingStrategy
+19:35:29.651 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method changeArticleCategory was back-controller
+19:35:29.652 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method changeArticleCategory was back-controller
+19:35:29.653 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+19:35:29.653 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.String(true)
+19:35:29.654 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+19:35:29.654 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+19:35:29.654 logback [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /admin/article/{id}.com.springboot.blog.controller.BackController.deleteArticle.DefaultGenericTypeNamingStrategy
+19:35:29.654 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /admin/article/{id}.com.springboot.blog.controller.BackController.deleteArticle.DefaultGenericTypeNamingStrategy
+19:35:29.655 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method deleteArticle was back-controller
+19:35:29.656 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method deleteArticle was back-controller
+19:35:29.657 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+19:35:29.657 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.String(true)
+19:35:29.657 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+19:35:29.657 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+19:35:29.657 logback [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /admin/comment/article/{id}.com.springboot.blog.controller.BackController.deleteArticleComment.DefaultGenericTypeNamingStrategy
+19:35:29.658 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /admin/comment/article/{id}.com.springboot.blog.controller.BackController.deleteArticleComment.DefaultGenericTypeNamingStrategy
+19:35:29.659 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method deleteArticleComment was back-controller
+19:35:29.660 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method deleteArticleComment was back-controller
+19:35:29.662 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+19:35:29.662 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.String(true)
+19:35:29.662 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+19:35:29.662 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+19:35:29.662 logback [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /admin/category/{id}.com.springboot.blog.controller.BackController.deleteCategoryInfo.DefaultGenericTypeNamingStrategy
+19:35:29.662 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /admin/category/{id}.com.springboot.blog.controller.BackController.deleteCategoryInfo.DefaultGenericTypeNamingStrategy
+19:35:29.663 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method deleteCategoryInfo was back-controller
+19:35:29.664 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method deleteCategoryInfo was back-controller
+19:35:29.665 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+19:35:29.665 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.String(true)
+19:35:29.666 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+19:35:29.666 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+19:35:29.666 logback [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /admin/comment/{id}.com.springboot.blog.controller.BackController.deleteComment.DefaultGenericTypeNamingStrategy
+19:35:29.666 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /admin/comment/{id}.com.springboot.blog.controller.BackController.deleteComment.DefaultGenericTypeNamingStrategy
+19:35:29.667 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method deleteComment was back-controller
+19:35:29.668 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method deleteComment was back-controller
+19:35:29.670 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.springboot.blog.dto.ArticleDto(true)
+19:35:29.670 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key com.springboot.blog.dto.ArticleDto(true)
+19:35:29.670 logback [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.springboot.blog.dto.ArticleDto(true)
+19:35:29.670 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.springboot.blog.dto.ArticleDto(true)
+19:35:29.673 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.springboot.blog.dto.ArticleDto(true)
+19:35:29.673 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key com.springboot.blog.dto.ArticleDto(true)
+19:35:29.674 logback [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.springboot.blog.dto.ArticleDto(true)
+19:35:29.674 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.springboot.blog.dto.ArticleDto(true)
+19:35:29.674 logback [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /admin/article/{id}.com.springboot.blog.controller.BackController.getArticleDtoById.DefaultGenericTypeNamingStrategy
+19:35:29.674 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /admin/article/{id}.com.springboot.blog.controller.BackController.getArticleDtoById.DefaultGenericTypeNamingStrategy
+19:35:29.675 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getArticleDtoById was back-controller
+19:35:29.676 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getArticleDtoById was back-controller
+19:35:29.677 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.springboot.blog.entity.CategoryInfo(true)
+19:35:29.677 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key com.springboot.blog.entity.CategoryInfo(true)
+19:35:29.677 logback [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.springboot.blog.entity.CategoryInfo(true)
+19:35:29.677 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.springboot.blog.entity.CategoryInfo(true)
+19:35:29.678 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.springboot.blog.entity.CategoryInfo(true)
+19:35:29.678 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key com.springboot.blog.entity.CategoryInfo(true)
+19:35:29.679 logback [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.springboot.blog.entity.CategoryInfo(true)
+19:35:29.679 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.springboot.blog.entity.CategoryInfo(true)
+19:35:29.679 logback [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /admin/category/{id}.com.springboot.blog.controller.BackController.getCategoryInfo.DefaultGenericTypeNamingStrategy
+19:35:29.679 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /admin/category/{id}.com.springboot.blog.controller.BackController.getCategoryInfo.DefaultGenericTypeNamingStrategy
+19:35:29.681 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getCategoryInfo was back-controller
+19:35:29.682 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getCategoryInfo was back-controller
+19:35:29.683 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.springboot.blog.entity.Comment(true)
+19:35:29.683 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key com.springboot.blog.entity.Comment(true)
+19:35:29.683 logback [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.springboot.blog.entity.Comment(true)
+19:35:29.683 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.springboot.blog.entity.Comment(true)
+19:35:29.687 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.springboot.blog.entity.Comment(true)
+19:35:29.687 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key com.springboot.blog.entity.Comment(true)
+19:35:29.687 logback [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.springboot.blog.entity.Comment(true)
+19:35:29.687 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.springboot.blog.entity.Comment(true)
+19:35:29.687 logback [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /admin/comment/{id}.com.springboot.blog.controller.BackController.getCommentById.DefaultGenericTypeNamingStrategy
+19:35:29.687 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /admin/comment/{id}.com.springboot.blog.controller.BackController.getCommentById.DefaultGenericTypeNamingStrategy
+19:35:29.688 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getCommentById was back-controller
+19:35:29.689 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getCommentById was back-controller
+19:35:29.690 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+19:35:29.690 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.String(true)
+19:35:29.690 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+19:35:29.691 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+19:35:29.691 logback [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /admin/login.com.springboot.blog.controller.BackController.login.DefaultGenericTypeNamingStrategy
+19:35:29.691 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /admin/login.com.springboot.blog.controller.BackController.login.DefaultGenericTypeNamingStrategy
+19:35:29.692 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method login was back-controller
+19:35:29.693 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method login was back-controller
+19:35:29.694 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+19:35:29.694 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.String(true)
+19:35:29.694 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+19:35:29.694 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+19:35:29.694 logback [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /admin/comment/reply/{id}.com.springboot.blog.controller.BackController.replyComment.DefaultGenericTypeNamingStrategy
+19:35:29.694 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /admin/comment/reply/{id}.com.springboot.blog.controller.BackController.replyComment.DefaultGenericTypeNamingStrategy
+19:35:29.695 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method replyComment was back-controller
+19:35:29.696 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method replyComment was back-controller
+19:35:29.698 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+19:35:29.698 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.String(true)
+19:35:29.698 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+19:35:29.698 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+19:35:29.698 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.springboot.blog.dto.ArticleDto(false)
+19:35:29.698 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key com.springboot.blog.dto.ArticleDto(false)
+19:35:29.698 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.springboot.blog.dto.ArticleDto(false)
+19:35:29.698 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key com.springboot.blog.dto.ArticleDto(false)
+19:35:29.698 logback [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /admin/article/{id}.com.springboot.blog.controller.BackController.updateArticle.DefaultGenericTypeNamingStrategy
+19:35:29.698 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /admin/article/{id}.com.springboot.blog.controller.BackController.updateArticle.DefaultGenericTypeNamingStrategy
+19:35:29.700 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method updateArticle was back-controller
+19:35:29.701 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method updateArticle was back-controller
+19:35:29.702 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+19:35:29.702 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.String(true)
+19:35:29.702 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+19:35:29.702 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+19:35:29.702 logback [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /admin/article/picture/{id}.com.springboot.blog.controller.BackController.updateArticlePicture.DefaultGenericTypeNamingStrategy
+19:35:29.703 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /admin/article/picture/{id}.com.springboot.blog.controller.BackController.updateArticlePicture.DefaultGenericTypeNamingStrategy
+19:35:29.704 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method updateArticlePicture was back-controller
+19:35:29.705 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method updateArticlePicture was back-controller
+19:35:29.706 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+19:35:29.706 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.String(true)
+19:35:29.706 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+19:35:29.706 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+19:35:29.706 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.springboot.blog.entity.CategoryInfo(false)
+19:35:29.706 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key com.springboot.blog.entity.CategoryInfo(false)
+19:35:29.706 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.springboot.blog.entity.CategoryInfo(false)
+19:35:29.706 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key com.springboot.blog.entity.CategoryInfo(false)
+19:35:29.707 logback [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /admin/category/{id}.com.springboot.blog.controller.BackController.updateCategoryInfo.DefaultGenericTypeNamingStrategy
+19:35:29.707 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /admin/category/{id}.com.springboot.blog.controller.BackController.updateCategoryInfo.DefaultGenericTypeNamingStrategy
+19:35:29.709 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method updateCategoryInfo was back-controller
+19:35:29.711 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method updateCategoryInfo was back-controller
+19:35:29.716 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+19:35:29.716 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.String(true)
+19:35:29.716 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+19:35:29.716 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+19:35:29.716 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.springboot.blog.dto.ArticleCommentDto(false)
+19:35:29.716 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key com.springboot.blog.dto.ArticleCommentDto(false)
+19:35:29.717 logback [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.springboot.blog.dto.ArticleCommentDto(false)
+19:35:29.717 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.springboot.blog.dto.ArticleCommentDto(false)
+19:35:29.719 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.springboot.blog.dto.ArticleCommentDto(false)
+19:35:29.719 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key com.springboot.blog.dto.ArticleCommentDto(false)
+19:35:29.719 logback [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.springboot.blog.dto.ArticleCommentDto(false)
+19:35:29.719 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.springboot.blog.dto.ArticleCommentDto(false)
+19:35:29.720 logback [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /api/comment/article/{id}.com.springboot.blog.controller.ForeController.addArticleComment.DefaultGenericTypeNamingStrategy
+19:35:29.720 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /api/comment/article/{id}.com.springboot.blog.controller.ForeController.addArticleComment.DefaultGenericTypeNamingStrategy
+19:35:29.722 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method addArticleComment was fore-controller
+19:35:29.723 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method addArticleComment was fore-controller
+19:35:29.725 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+19:35:29.726 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.String(true)
+19:35:29.726 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+19:35:29.726 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+19:35:29.727 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.springboot.blog.entity.Comment(false)
+19:35:29.727 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key com.springboot.blog.entity.Comment(false)
+19:35:29.727 logback [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.springboot.blog.entity.Comment(false)
+19:35:29.727 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.springboot.blog.entity.Comment(false)
+19:35:29.730 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.springboot.blog.entity.Comment(false)
+19:35:29.730 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key com.springboot.blog.entity.Comment(false)
+19:35:29.730 logback [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.springboot.blog.entity.Comment(false)
+19:35:29.730 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.springboot.blog.entity.Comment(false)
+19:35:29.730 logback [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /api/comment.com.springboot.blog.controller.ForeController.addMessage.DefaultGenericTypeNamingStrategy
+19:35:29.730 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /api/comment.com.springboot.blog.controller.ForeController.addMessage.DefaultGenericTypeNamingStrategy
+19:35:29.731 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method addMessage was fore-controller
+19:35:29.732 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method addMessage was fore-controller
+19:35:29.733 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.springboot.blog.dto.ArticleDto(true)
+19:35:29.733 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key com.springboot.blog.dto.ArticleDto(true)
+19:35:29.733 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.springboot.blog.dto.ArticleDto(true)
+19:35:29.733 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key com.springboot.blog.dto.ArticleDto(true)
+19:35:29.734 logback [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /api/article/{id}.com.springboot.blog.controller.ForeController.getArticleById.DefaultGenericTypeNamingStrategy
+19:35:29.734 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /api/article/{id}.com.springboot.blog.controller.ForeController.getArticleById.DefaultGenericTypeNamingStrategy
+19:35:29.735 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getArticleById was fore-controller
+19:35:29.735 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getArticleById was fore-controller
+19:35:29.736 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.util.List<com.springboot.blog.dto.ArticleWithPictureDto>(true)
+19:35:29.736 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.util.List<com.springboot.blog.dto.ArticleWithPictureDto>(true)
+19:35:29.736 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.util.List<com.springboot.blog.dto.ArticleWithPictureDto>(true)
+19:35:29.736 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.util.List<com.springboot.blog.dto.ArticleWithPictureDto>(true)
+19:35:29.737 logback [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.springboot.blog.dto.ArticleWithPictureDto(true)
+19:35:29.737 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.springboot.blog.dto.ArticleWithPictureDto(true)
+19:35:29.740 logback [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: java.util.List<com.springboot.blog.dto.ArticleWithPictureDto>(true)
+19:35:29.740 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key java.util.List<com.springboot.blog.dto.ArticleWithPictureDto>(true)
+19:35:29.740 logback [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.springboot.blog.dto.ArticleWithPictureDto(true)
+19:35:29.740 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.springboot.blog.dto.ArticleWithPictureDto(true)
+19:35:29.741 logback [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /api/article/list.com.springboot.blog.controller.ForeController.listAllArticleInfo.DefaultGenericTypeNamingStrategy
+19:35:29.741 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /api/article/list.com.springboot.blog.controller.ForeController.listAllArticleInfo.DefaultGenericTypeNamingStrategy
+19:35:29.742 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method listAllArticleInfo was fore-controller
+19:35:29.743 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method listAllArticleInfo was fore-controller
+19:35:29.744 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.util.List<com.springboot.blog.entity.CategoryInfo>(true)
+19:35:29.744 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.util.List<com.springboot.blog.entity.CategoryInfo>(true)
+19:35:29.744 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.util.List<com.springboot.blog.entity.CategoryInfo>(true)
+19:35:29.744 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.util.List<com.springboot.blog.entity.CategoryInfo>(true)
+19:35:29.745 logback [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.springboot.blog.entity.CategoryInfo(true)
+19:35:29.745 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.springboot.blog.entity.CategoryInfo(true)
+19:35:29.745 logback [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: java.util.List<com.springboot.blog.entity.CategoryInfo>(true)
+19:35:29.745 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key java.util.List<com.springboot.blog.entity.CategoryInfo>(true)
+19:35:29.745 logback [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.springboot.blog.entity.CategoryInfo(true)
+19:35:29.745 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.springboot.blog.entity.CategoryInfo(true)
+19:35:29.745 logback [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /api/category/list.com.springboot.blog.controller.ForeController.listAllCategoryInfo.DefaultGenericTypeNamingStrategy
+19:35:29.745 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /api/category/list.com.springboot.blog.controller.ForeController.listAllCategoryInfo.DefaultGenericTypeNamingStrategy
+19:35:29.746 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method listAllCategoryInfo was fore-controller
+19:35:29.746 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method listAllCategoryInfo was fore-controller
+19:35:29.747 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.util.List<com.springboot.blog.entity.Comment>(true)
+19:35:29.747 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.util.List<com.springboot.blog.entity.Comment>(true)
+19:35:29.747 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.util.List<com.springboot.blog.entity.Comment>(true)
+19:35:29.747 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.util.List<com.springboot.blog.entity.Comment>(true)
+19:35:29.747 logback [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.springboot.blog.entity.Comment(true)
+19:35:29.747 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.springboot.blog.entity.Comment(true)
+19:35:29.747 logback [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: java.util.List<com.springboot.blog.entity.Comment>(true)
+19:35:29.747 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key java.util.List<com.springboot.blog.entity.Comment>(true)
+19:35:29.747 logback [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.springboot.blog.entity.Comment(true)
+19:35:29.747 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.springboot.blog.entity.Comment(true)
+19:35:29.748 logback [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /api/comment/list.com.springboot.blog.controller.ForeController.listAllComment.DefaultGenericTypeNamingStrategy
+19:35:29.748 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /api/comment/list.com.springboot.blog.controller.ForeController.listAllComment.DefaultGenericTypeNamingStrategy
+19:35:29.748 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method listAllComment was fore-controller
+19:35:29.749 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method listAllComment was fore-controller
+19:35:29.749 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.util.List<com.springboot.blog.dto.ArticleWithPictureDto>(true)
+19:35:29.749 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.util.List<com.springboot.blog.dto.ArticleWithPictureDto>(true)
+19:35:29.749 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.util.List<com.springboot.blog.dto.ArticleWithPictureDto>(true)
+19:35:29.750 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.util.List<com.springboot.blog.dto.ArticleWithPictureDto>(true)
+19:35:29.750 logback [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.springboot.blog.dto.ArticleWithPictureDto(true)
+19:35:29.750 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.springboot.blog.dto.ArticleWithPictureDto(true)
+19:35:29.750 logback [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /api/article/list/sort/{id}.com.springboot.blog.controller.ForeController.listArticleInfo.DefaultGenericTypeNamingStrategy
+19:35:29.750 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /api/article/list/sort/{id}.com.springboot.blog.controller.ForeController.listArticleInfo.DefaultGenericTypeNamingStrategy
+19:35:29.751 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method listArticleInfo was fore-controller
+19:35:29.752 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method listArticleInfo was fore-controller
+19:35:29.753 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.util.List<com.springboot.blog.dto.ArticleWithPictureDto>(true)
+19:35:29.753 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.util.List<com.springboot.blog.dto.ArticleWithPictureDto>(true)
+19:35:29.753 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.util.List<com.springboot.blog.dto.ArticleWithPictureDto>(true)
+19:35:29.753 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.util.List<com.springboot.blog.dto.ArticleWithPictureDto>(true)
+19:35:29.753 logback [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.springboot.blog.dto.ArticleWithPictureDto(true)
+19:35:29.753 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.springboot.blog.dto.ArticleWithPictureDto(true)
+19:35:29.753 logback [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /api/article/list/latest.com.springboot.blog.controller.ForeController.listLastestArticle.DefaultGenericTypeNamingStrategy
+19:35:29.753 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /api/article/list/latest.com.springboot.blog.controller.ForeController.listLastestArticle.DefaultGenericTypeNamingStrategy
+19:35:29.754 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method listLastestArticle was fore-controller
+19:35:29.754 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method listLastestArticle was fore-controller
+19:35:29.755 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.util.List<com.springboot.blog.dto.ArticleCommentDto>(true)
+19:35:29.755 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.util.List<com.springboot.blog.dto.ArticleCommentDto>(true)
+19:35:29.755 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.util.List<com.springboot.blog.dto.ArticleCommentDto>(true)
+19:35:29.755 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.util.List<com.springboot.blog.dto.ArticleCommentDto>(true)
+19:35:29.755 logback [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.springboot.blog.dto.ArticleCommentDto(true)
+19:35:29.755 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.springboot.blog.dto.ArticleCommentDto(true)
+19:35:29.757 logback [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: java.util.List<com.springboot.blog.dto.ArticleCommentDto>(true)
+19:35:29.757 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key java.util.List<com.springboot.blog.dto.ArticleCommentDto>(true)
+19:35:29.757 logback [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.springboot.blog.dto.ArticleCommentDto(true)
+19:35:29.757 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.springboot.blog.dto.ArticleCommentDto(true)
+19:35:29.757 logback [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /api/comment/article/{id}.com.springboot.blog.controller.ForeController.listMessageByArticleId.DefaultGenericTypeNamingStrategy
+19:35:29.757 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /api/comment/article/{id}.com.springboot.blog.controller.ForeController.listMessageByArticleId.DefaultGenericTypeNamingStrategy
+19:35:29.758 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method listMessageByArticleId was fore-controller
+19:35:29.759 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method listMessageByArticleId was fore-controller
+19:35:29.760 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.util.List<com.springboot.blog.entity.SysLog>(true)
+19:35:29.760 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.util.List<com.springboot.blog.entity.SysLog>(true)
+19:35:29.760 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.util.List<com.springboot.blog.entity.SysLog>(true)
+19:35:29.760 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.util.List<com.springboot.blog.entity.SysLog>(true)
+19:35:29.760 logback [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.springboot.blog.entity.SysLog(true)
+19:35:29.760 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.springboot.blog.entity.SysLog(true)
+19:35:29.762 logback [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: java.util.List<com.springboot.blog.entity.SysLog>(true)
+19:35:29.762 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key java.util.List<com.springboot.blog.entity.SysLog>(true)
+19:35:29.762 logback [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.springboot.blog.entity.SysLog(true)
+19:35:29.762 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.springboot.blog.entity.SysLog(true)
+19:35:29.762 logback [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /admin/sys/log.com.springboot.blog.controller.SysController.listAllLog.DefaultGenericTypeNamingStrategy
+19:35:29.762 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /admin/sys/log.com.springboot.blog.controller.SysController.listAllLog.DefaultGenericTypeNamingStrategy
+19:35:29.763 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method listAllLog was sys-controller
+19:35:29.763 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method listAllLog was sys-controller
+19:35:29.764 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.util.List<com.springboot.blog.entity.SysView>(true)
+19:35:29.764 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.util.List<com.springboot.blog.entity.SysView>(true)
+19:35:29.764 logback [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.util.List<com.springboot.blog.entity.SysView>(true)
+19:35:29.764 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.util.List<com.springboot.blog.entity.SysView>(true)
+19:35:29.764 logback [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.springboot.blog.entity.SysView(true)
+19:35:29.764 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.springboot.blog.entity.SysView(true)
+19:35:29.766 logback [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: java.util.List<com.springboot.blog.entity.SysView>(true)
+19:35:29.766 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key java.util.List<com.springboot.blog.entity.SysView>(true)
+19:35:29.766 logback [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.springboot.blog.entity.SysView(true)
+19:35:29.766 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.springboot.blog.entity.SysView(true)
+19:35:29.766 logback [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /admin/sys/view.com.springboot.blog.controller.SysController.listAllView.DefaultGenericTypeNamingStrategy
+19:35:29.766 logback [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /admin/sys/view.com.springboot.blog.controller.SysController.listAllView.DefaultGenericTypeNamingStrategy
+19:35:29.767 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method listAllView was sys-controller
+19:35:29.767 logback [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method listAllView was sys-controller
+19:35:29.778 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+19:35:29.794 logback [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+19:35:29.805 logback [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+19:35:29.810 logback [restartedMain] INFO  com.springboot.blog.BlogApplication - Started BlogApplication in 4.883 seconds (JVM running for 6.118)
+19:35:35.261 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+19:35:35.261 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+19:35:35.281 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+19:38:08.851 logback [Thread-8] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@35e203a3: startup date [Wed Oct 31 19:35:25 GMT 2018]; root of context hierarchy
+19:38:08.854 logback [Thread-8] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+19:38:08.854 logback [Thread-8] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+19:38:08.859 logback [Thread-8] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
