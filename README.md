@@ -1,5 +1,4 @@
 # Blog
-SpringBoot Exploration - Blog
 The Blog is under construction!
 
 ## Demo
