@@ -23,4 +23,6 @@ public interface NoteService {
 
     List<NoteWithPictureDto> listLatest();
 
+    List<NoteDto> listAllNotes();
+
 }

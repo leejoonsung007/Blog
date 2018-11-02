@@ -12,7 +12,7 @@ $(document).ready(function () {
         }
     });
 
-    // fill the update blog page
+    // fill the blog page
     $.ajax({
         type: "get",
         url: "http://localhost:8080/api/article/list",

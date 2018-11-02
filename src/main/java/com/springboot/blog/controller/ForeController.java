@@ -110,26 +110,27 @@ public class ForeController extends BaseController{
     }
 
     //------------------------------------------Note page----------------------------------------------
-    // get all articles
+    // get all notes
     @ApiOperation("get all the notes")
     @GetMapping("note/list")
-    public List<NoteWithPictureDto> listAllNoteInfo() {
-        return noteService.listAll();
+    public List<NoteDto> listAllNote() {
+        return noteService.listAllNotes();
     }
 
-    // get the latest article
+    // get the latest note
     @ApiOperation("get the latest note")
     @GetMapping("note/list/latest")
-    public List<NoteWithPictureDto> listLastestNote() {
+    public List<NoteWithPictureDto> listLatestNote() {
         return noteService.listLatest();
     }
 
-    // get article from the article id
-    @ApiOperation("get article from the note id")
+    // get article from the note id
+    @ApiOperation("get note from the note id")
     @GetMapping("note/{id}")
     public NoteDto getNoteById(@PathVariable Long id) {
         NoteDto noteDto = noteService.getOneById(id);
         noteDto.setContent(Markdown2HtmlUtil.markdown2html(noteDto.getContent()));
         return noteDto;
     }
+
 }

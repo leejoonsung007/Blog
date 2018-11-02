@@ -55,7 +55,6 @@ function showAllArticleInfo() {
                 articleInfo.content.querySelector("img").src = item.pictureUrl;
                 if (item.top == true) {
                     articleInfo.content.querySelector("h5").innerHTML = "[Topping] " + item.title;
-                    //					articleInfo.content.querySelector("h5").style.fontWeight = "bold";
                 } else {
                     articleInfo.content.querySelector("h5").innerHTML = item.title;
                 }

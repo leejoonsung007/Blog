@@ -57,6 +57,7 @@ function updateNote(id) {
             }
             $('#notePicture').val(json.pictureUrl);
             $('#noteContent').val(json.content);
+            console.log(json.content)
         }
     });
 

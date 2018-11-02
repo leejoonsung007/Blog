@@ -12,6 +12,7 @@ public class NoteWithPictureDto {
     private Long notePictureId;
     private String pictureUrl;
 
+
     public Long getId() {
         return id;
     }

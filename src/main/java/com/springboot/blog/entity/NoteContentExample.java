@@ -39,6 +39,7 @@ public class NoteContentExample {
         oredCriteria.add(criteria);
     }
 
+
     public Criteria or() {
         Criteria criteria = createCriteriaInternal();
         oredCriteria.add(criteria);

@@ -5,6 +5,7 @@ import com.springboot.blog.dto.NoteDto;
 import com.springboot.blog.dto.NoteWithPictureDto;
 import com.springboot.blog.entity.*;
 import com.springboot.blog.service.NoteService;
+import org.hibernate.validator.cfg.defs.NotEmptyDef;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -100,11 +101,12 @@ public class NoteServiceImpl implements NoteService {
         noteInfoMapper.updateByPrimaryKey(noteInfo);
 
         // content
-        NoteContentExample noteContentExample = new NoteContentExample();
-        noteContentExample.or().andNoteIdEqualTo(id);
-        NoteContent noteContent = noteContentMapper.selectByExample(noteContentExample).get(0);
-        noteDto.setContent(noteContent.getContent());
-        noteDto.setNoteContentId(noteContent.getId());
+//       NoteContentExample noteContentExample = new NoteContentExample();
+//       noteContentExample.or().andNoteIdEqualTo(id);
+//       System.out.println(noteContentExample.or().andNoteIdEqualTo(id));
+       NoteContent noteContent = noteContentMapper.selectByPrimaryKey(id);
+       noteDto.setNoteContentId(noteContent.getId());
+       noteDto.setContent(noteContent.getContent());
 
         // picture
         NotePictureExample notePictureExample = new NotePictureExample();
@@ -150,6 +152,21 @@ public class NoteServiceImpl implements NoteService {
         return notes;
     }
 
+    @Override
+    public List<NoteDto> listAllNotes() {
+        List<NoteDto> notes = getAllNotes();
+        LinkedList<NoteDto> list = new LinkedList<>();
+        for(NoteDto note: notes){
+            if(note.isTop()){
+                list.addFirst(note);
+            }else{
+                list.addLast(note);
+            }
+        }
+        notes = new ArrayList<>(list);
+        return notes;
+    }
+
     private Long getNoteLatestId(){
         NoteInfoExample example = new NoteInfoExample();
         example.setOrderByClause("id desc");
@@ -179,6 +196,39 @@ public class NoteServiceImpl implements NoteService {
             noteWithPictureDto.setPictureUrl(notePicture.getPictureUrl());
 
             notes.add(noteWithPictureDto);
+        }
+        return notes;
+    }
+
+    private List<NoteDto> getAllNotes(){
+        NoteInfoExample example = new NoteInfoExample();
+        example.setOrderByClause("id desc");
+        //return all
+        List<NoteInfo> noteInfos = noteInfoMapper.selectByExample(example);
+        List<NoteDto> notes = new ArrayList<>();
+        for(NoteInfo noteInfo : noteInfos){
+            NoteDto noteDto = new NoteDto();
+
+            //basic information
+            noteDto.setId(noteInfo.getId());
+            noteDto.setTitle(noteInfo.getTitle());
+            noteDto.setTop(noteInfo.getIsTop());
+            noteDto.setTraffic(noteInfo.getTraffic());
+
+            //picture
+            NotePictureExample notePictureExample = new NotePictureExample();
+            notePictureExample.or().andNoteIdEqualTo(noteInfo.getId());
+            NotePicture notePicture = notePictureMapper.selectByExample(notePictureExample).get(0);
+            noteDto.setNotePictureId(notePicture.getId());
+            noteDto.setPictureUrl(notePicture.getPictureUrl());
+
+            //content
+            NoteContent noteContent = noteContentMapper.selectByPrimaryKey(noteInfo.getId());
+            noteDto.setNoteContentId(noteContent.getId());
+            noteDto.setContent(noteContent.getContent());
+
+            notes.add(noteDto);
+
         }
         return notes;
     }
