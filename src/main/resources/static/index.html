@@ -9,12 +9,46 @@
 		<link href="css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
 		<script src="js/bootstrap/3.3.6/bootstrap.min.js"></script>
 		<link href="css/index.css" rel="stylesheet">
+		<link href="css/bootstrap/3.3.6/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/bootstrap/3.3.6/bootstrap-theme.css">
 
 	</head>
 
 	<body>
 
-		<script language="javascript" type="text/javascript" src="js/header.js"></script>
+	<header role="banner">
+		<nav role="navigation" class="navbar navbar-static-top navbar-default" style="margin-bottom:0px">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">
+						<img src="img/test4.jpg" alt="logo'" width="120" style="margin-top:-33px">
+					</a>
+				</div>
+
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav pull-left">
+						<li class="active"><a href="index.html">
+							<span class="glyphicon glyphicon-home"></span> Home
+						</a></li>
+						<li><a href="blog.html">
+							<span class="glyphicon glyphicon-pencil"></span> BLOG
+						</a></li>
+						<li><a href="note.html">
+							<span class="glyphicon glyphicon-file"></span> NOTE
+						</a></li>
+						<li><a href="about.html">
+							<span class="glyphicon glyphicon-user"></span> ABOUT
+						</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div><!--/.container -->
+		</nav>
+	</header>
 
 		<div id="content">
 			<!--Large Article Picture-->
@@ -60,17 +94,10 @@
 			<hr>
 
 			<div class="learningNote">
-				<H3>Learning Note</H3>
+				<H3>Study Note</H3>
 				<div class="Note">
-					<h2>How to deploy a SpringBoot Application on AWS  </h2>
-					<div class="aboutArticle">
-					<div class="title">
-					<a href="https://aws.amazon.com/blogs/devops/deploying-a-spring-boot-application-on-aws-using-aws-elastic-beanstalk/">Deploying a Spring Boot Application on AWS Using AWS Elastic Beanstalk</a>
-					</div><br>
-					<div class="summary">
-						In this blog post, I will show you how to deploy a sample Spring Boot application using AWS Elastic Beanstalk and how to customize the Spring Boot configuration through the use of environment variables.
-					</div>
-					</div>
+					<h2 id="noteTitle"></h2><br>
+					<div id="noteContent"></div>
 				</div>
 			</div>
 		</div>

@@ -22,6 +22,18 @@ window.onload = function() {
 			});
 		}
 	});
+
+	$.ajax({
+		url:"http://localhost:8080/api/note/latest",
+		type:"GET",
+		dataType:"json",
+		success:function (json) {
+			$("#noteTitle").html(json.title);
+			$("#noteContent").html(json.content);
+			console.log(json.title);
+			console.log(json.content);
+        }
+	});
 };
 
 // enter the details page
@@ -41,3 +53,5 @@ $(".smallPictures img").mouseenter(function() {
 	$("#articleTitle").html(title);
 	$("#articleSummary").html(summary);
 });
+
+

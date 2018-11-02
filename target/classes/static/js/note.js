@@ -7,9 +7,17 @@ window.onload = function () {
         success: function (json) {
             $.each(json, function (i, item) {
                 $('#allNotes').append(
-                    '<p>' + item.title + '</p>' +
-                    '<p>' + item.content + '</p>' +
-                    '<p><a href="' + item.pictureUrl + '">View</a></p>');
+                    '<table class="table" >' +
+                    '<tr>'+ '<th colspan="2">'+
+                    '<H3 class="noteTitle">' + item.title + item.createBy + '</H3>' +
+                    '</th>'+ '</tr>'+
+                    '<tr>'+ '<th>'+
+                    '<p><img class="noteImage" height="150px" width="150px" src="' + item.pictureUrl + '"></a></p>' +
+                    '</th>'+
+                    '<th>' + '<div class="noteContent">' + item.content + '</div>' + '</th>' +
+                    '<hr width="80%">' + '</table>'
+
+                );
             });
             // $("#noteTitle").html(json.title);
             // // $("#noteCreateBy").html(json.createBy);

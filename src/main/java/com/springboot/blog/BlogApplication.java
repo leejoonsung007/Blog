@@ -15,5 +15,4 @@ public class BlogApplication extends WebMvcConfigurerAdapter {
         SpringApplication.run(BlogApplication.class, args);
     }
 
-
 }

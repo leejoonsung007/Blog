@@ -5,6 +5,7 @@ import com.springboot.blog.dto.NoteDto;
 import com.springboot.blog.dto.NoteWithPictureDto;
 import com.springboot.blog.entity.*;
 import com.springboot.blog.service.NoteService;
+import com.springboot.blog.util.Markdown2HtmlUtil;
 import org.hibernate.validator.cfg.defs.NotEmptyDef;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -26,7 +27,7 @@ public class NoteServiceImpl implements NoteService {
     @Autowired
     private NoteContentMapper noteContentMapper;
 
-    private static byte MAX_LASTEST_NOTE_COUNT = 5;
+    private static byte MAX_LASTEST_NOTE_COUNT = 1;
 
     //add a note
     @Override
@@ -144,7 +145,7 @@ public class NoteServiceImpl implements NoteService {
        List<NoteWithPictureDto> notes = listAllNotesWithPicture();
        if(notes.size() >= MAX_LASTEST_NOTE_COUNT){
            List<NoteWithPictureDto> tempNotes = new ArrayList<>();
-           for(int i = 0; i < 5; i++){
+           for(int i = 0; i < 1; i++){
                   tempNotes.add(notes.get(i));
            }
            return tempNotes;
@@ -214,6 +215,7 @@ public class NoteServiceImpl implements NoteService {
             noteDto.setTitle(noteInfo.getTitle());
             noteDto.setTop(noteInfo.getIsTop());
             noteDto.setTraffic(noteInfo.getTraffic());
+            noteDto.setCreateBy(noteInfo.getCreateBy());
 
             //picture
             NotePictureExample notePictureExample = new NotePictureExample();
@@ -225,7 +227,7 @@ public class NoteServiceImpl implements NoteService {
             //content
             NoteContent noteContent = noteContentMapper.selectByPrimaryKey(noteInfo.getId());
             noteDto.setNoteContentId(noteContent.getId());
-            noteDto.setContent(noteContent.getContent());
+            noteDto.setContent(Markdown2HtmlUtil.markdown2html(noteContent.getContent()));
 
             notes.add(noteDto);
 

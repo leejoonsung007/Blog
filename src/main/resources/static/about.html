@@ -5,36 +5,80 @@
     <meta charset="utf-8"/>
     <title>Juncheng Li</title>
 
-    <!-- 引入 JQ 和 Bootstrap -->
     <script src="js/jquery/2.0.0/jquery.min.js"></script>
     <link href="css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
     <script src="js/bootstrap/3.3.6/bootstrap.min.js"></script>
-    <!-- 引入自己的CSS -->
     <link href="css/about.css" rel="stylesheet"/>
+    <link href="css/bootstrap/3.3.6/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap/3.3.6/bootstrap-theme.css">
 </head>
 
 <body>
+<header role="banner">
+    <nav role="navigation" class="navbar navbar-static-top navbar-default" style="margin-bottom:0px">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="img/test4.jpg" alt="logo'" width="120" style="margin-top:-33px">
+                </a>
+            </div>
 
-<!--引入头部-->
-<script language="javascript" type="text/javascript" src="js/header.js"></script>
-<!--题图-->
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav pull-left">
+                    <li><a href="index.html">
+                        <span class="glyphicon glyphicon-home"></span> Home
+                    </a></li>
+                    <li><a href="blog.html">
+                        <span class="glyphicon glyphicon-pencil"></span> BLOG
+                    </a></li>
+                    <li><a href="note.html">
+                        <span class="glyphicon glyphicon-file"></span> NOTE
+                    </a></li>
+                    <li class="active"><a href="about.html">
+                        <span class="glyphicon glyphicon-user"></span> ABOUT
+                    </a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container -->
+    </nav>
+</header>
+
+<!--large picture-->
 <img id="titu" src="img/about/above-adventure-aerial-air.jpg"/>
-<!--主体内容-->
+<!--content-->
 <div id="content">
 
-    <!-- 关于信息 -->
+    <!-- about -->
     <div class="aboutInfo">
         <div class="leftInfo">
-            <img src="img/head.jpg">
+            <img src="img/avatar.png">
             <h2>Juncheng Li</h2>
-            <h4>UCD</h4>
+            <h4>software engineer, with a strong passion in Java and Python development</h4>
+
+        </div>
+        <div class="rightInfo">
+            <div class="aboutArticle">
+                <div class="title">
+                    <a href="https://www.linkedin.com/in/juncheng-li-512086149/" ><img height="50px" width="50px" src="img/about/github.png">  Github </a>
+                </div>
+            </div>
+            <div class="aboutArticle">
+                <div class="title">
+                    <a href="https://www.linkedin.com/in/juncheng-li-512086149/" ><img height="50px" width="50px" src="img/about/linkedin.png">  Linkedin </a>
+                </div>
+            </div>
         </div>
     </div>
     <!-- /. END ABOUT INFO -->
 
 
     <div style="margin-top: 60px;">
-        <label>Comments：</label>
+        <label> Message：</label>
     </div>
     <div id="commentList" class="commentList">
     </div>
@@ -44,7 +88,7 @@
     <div class="comment">
         <div class="panel panel-default">
             <div class="panel-heading">
-                create a comment
+                leave a  message
             </div>
             <div class="panel-body">
                 <label>Name:</label>
@@ -117,8 +161,6 @@
     <!-- /. END MODAL -->
 </div>
 
-<!--footer-->
-<!--<script language="javascript" type="text/javascript" src="js/footer.js"></script>-->
 </body>
 
 </html>

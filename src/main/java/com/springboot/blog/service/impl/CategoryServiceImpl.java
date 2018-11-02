@@ -13,13 +13,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-/**
- * 分类Service实现类
- *
- * @author:wmyskxz
- * @create:2018-06-19-上午 8:46
- */
-@Service
+//category service
 public class CategoryServiceImpl implements CategoryService {
 
     @Autowired
@@ -27,61 +21,40 @@ public class CategoryServiceImpl implements CategoryService {
     @Autowired
     ArticleCategoryMapper articleCategoryMapper;
 
-    /**
-     * 增加一条分类数据
-     *
-     * @param categoryInfo
-     */
+    //add a category info
     @Override
     public void addCategory(CategoryInfo categoryInfo) {
         categoryInfoMapper.insertSelective(categoryInfo);
     }
 
-    /**
-     * 通过分类id删除分类信息，要对应删除两个表的内容
-     *
-     * @param id 分类ID
-     */
+    //delete a category by id
     @Override
     public void deleteCategoryById(Long id) {
-        // 先删除ArticleCategory表中的相关内容
+        // delete ArticleCategory
         ArticleCategoryExample example = new ArticleCategoryExample();
         example.or().andCategoryIdEqualTo(id);
         List<ArticleCategory> categories = articleCategoryMapper.selectByExample(example);
         for (ArticleCategory articleCategory : categories) {
             articleCategoryMapper.deleteByPrimaryKey(articleCategory.getId());
         }
-        // 再删除CategoryInfo表中的内容
+        // delete CategoryInfo
         categoryInfoMapper.deleteByPrimaryKey(id);
     }
 
 
-    /**
-     * 更改文章对应的分类
-     *
-     * @param articleCategory
-     */
+    //update article category
     @Override
     public void updateArticleCategory(ArticleCategory articleCategory) {
         articleCategoryMapper.updateByPrimaryKeySelective(articleCategory);
     }
 
-    /**
-     * 更新分类信息
-     *
-     * @param categoryInfo
-     */
+    // update a category
     @Override
     public void updateCategory(CategoryInfo categoryInfo) {
         categoryInfoMapper.updateByPrimaryKeySelective(categoryInfo);
     }
 
-    /**
-     * 获取一条分类信息数据
-     *
-     * @param id
-     * @return
-     */
+    //get a category info by id
     @Override
     public CategoryInfo getOneById(Long id) {
         CategoryInfoExample example = new CategoryInfoExample();
@@ -90,28 +63,18 @@ public class CategoryServiceImpl implements CategoryService {
         return categoryInfos.get(0);
     }
 
-    /**
-     * 列举返回所有的分类信息
-     *
-     * @return
-     */
+    // list all category info
     @Override
     public List<CategoryInfo> listAllCategory() {
-        // 无条件查询即返回所有
         CategoryInfoExample example = new CategoryInfoExample();
         return categoryInfoMapper.selectByExample(example);
     }
 
-    /**
-     * 通过文章ID获取某一篇文章对应的分类
-     *
-     * @param id 文章ID
-     * @return
-     */
+    // getCategoryByArticleId
     @Override
     public ArticleCategoryDto getCategoryByArticleId(Long id) {
         ArticleCategoryDto articleCategoryDto = new ArticleCategoryDto();
-        // 填充tbl_article_category中的基础数据
+        // get tbl_article_category data
         ArticleCategoryExample example = new ArticleCategoryExample();
         example.or().andArticleIdEqualTo(id);
         List<ArticleCategory> articleCategories = articleCategoryMapper.selectByExample(example);
@@ -119,22 +82,11 @@ public class CategoryServiceImpl implements CategoryService {
         articleCategoryDto.setArticleId(articleCategory.getArticleId());
         articleCategoryDto.setId(articleCategory.getId());
         articleCategoryDto.setCategoryId(articleCategory.getCategoryId());
-        // 填充对应的分类信息
+        // get category info
         CategoryInfo categoryInfo = getOneById(articleCategory.getCategoryId());
         articleCategoryDto.setName(categoryInfo.getName());
         articleCategoryDto.setNumber(categoryInfo.getNumber());
         return articleCategoryDto;
     }
-
-//    /**
-//     * 往ArticleCategory中填充对应的CategoryInfo信息
-//     * 说明：articleCategory中必能获取到对应的分类ID，这是在删除和增加时限制的
-//     *
-//     * @param articleCategory
-//     */
-//    private void fill(ArticleCategory articleCategory) {
-//        Long categoryId = articleCategory.getCategoryId();
-//        articleCategory.setCategoryInfo(getOneById(categoryId));
-//    }
 
 }

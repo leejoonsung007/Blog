@@ -14,12 +14,7 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * 留言/评论Service实现类
- *
- * @author:wmyskxz
- * @create:2018-06-17-上午 10:54
- */
+// Comment service
 @Service
 public class CommentServiceImpl implements CommentService {
 
@@ -28,32 +23,23 @@ public class CommentServiceImpl implements CommentService {
     @Autowired
     ArticleCommentMapper articleCommentMapper;
 
-    /**
-     * 增加一条留言信息
-     *
-     * @param comment
-     */
+    //add a message
     @Override
     public void addComment(Comment comment) {
         commentMapper.insertSelective(comment);
     }
 
-    /**
-     * 增加一条文章评论信息
-     * 说明：ArticleCommentDto中封装了tbl_comment和tbl_article_comment中的基础数据
-     *
-     * @param articleCommentDto
-     */
+    //add a comment on a article
     @Override
     public void addArticleComment(ArticleCommentDto articleCommentDto) {
-        // 先增加Comment留言数据
+        // add comment data
         Comment comment = new Comment();
         comment.setIp(articleCommentDto.getIp());
         comment.setName(articleCommentDto.getName());
         comment.setEmail(articleCommentDto.getEmail());
-        comment.setContent(articleCommentDto.getContent());
+        comment.setContent(articleCommentDto.getContent().replaceAll("<script>","").replaceAll("</script>", ""));
         addComment(comment);
-        // 再更新tbl_article_comment作关联
+        // tbl_article_comment
         CommentExample example = new CommentExample();
         example.setOrderByClause("id desc");
         Long lastestCommentId = commentMapper.selectByExample(example).get(0).getId();
@@ -63,12 +49,7 @@ public class CommentServiceImpl implements CommentService {
         articleCommentMapper.insertSelective(articleComment);
     }
 
-    /**
-     * 通过留言ID删除一条数据
-     * 说明：并不是直接删除数据库中的数据而是直接将isEffective字段置为false
-     *
-     * @param id
-     */
+    //delete a message based on its id
     @Override
     public void deleteCommentById(Long id) {
         Comment comment = commentMapper.selectByPrimaryKey(id);
@@ -76,13 +57,7 @@ public class CommentServiceImpl implements CommentService {
         commentMapper.updateByPrimaryKeySelective(comment);
     }
 
-    /**
-     * 删除文章评论信息
-     * 说明：说明：并不是直接删除数据库中的数据而是直接将isEffective字段置为false
-     * 注意：这里需要设置两个表的字段
-     *
-     * @param id tbl_article_comment表主键
-     */
+   //delete a article comment
     @Override
     public void deleteArticleCommentById(Long id) {
         // 设置ArticleComment表中的字段为false
@@ -93,39 +68,28 @@ public class CommentServiceImpl implements CommentService {
         deleteCommentById(articleComment.getCommentId());
     }
 
-    /**
-     * 列举返回所有的留言信息
-     *
-     * @return
-     */
+    //list all message
     @Override
     public List<Comment> listAllComment() {
-        // 无条件查询即返回所有
         CommentExample example = new CommentExample();
         return commentMapper.selectByExample(example);
     }
 
-    /**
-     * 获取对应文章下的所有评论信息
-     * 说明：需要返回一个自己封装好的用来与前端交互的ArticleCommentDto集合
-     *
-     * @param id 文章ID
-     * @return
-     */
+    //list all comments of a article
     @Override
     public List<ArticleCommentDto> listAllArticleCommentById(Long id) {
         List<ArticleCommentDto> comments = new ArrayList<>();
         ArticleCommentExample example = new ArticleCommentExample();
         example.or().andArticleIdEqualTo(id);
         List<ArticleComment> articleComments = articleCommentMapper.selectByExample(example);
-        // 填充对应的评论信息
+        // comment information
         for (ArticleComment articleComment : articleComments) {
             if (true == articleComment.getIsEffective()) {
                 ArticleCommentDto articleCommentDto = new ArticleCommentDto();
                 articleCommentDto.setArticleCommentId(articleComment.getId());
                 articleCommentDto.setArticleId(articleComment.getArticleId());
                 articleCommentDto.setCreateBy(articleComment.getCreateBy());
-                // 查询对应的评论信息
+                // search corresponding comment
                 Comment comment = commentMapper.selectByPrimaryKey(articleComment.getCommentId());
                 articleCommentDto.setId(comment.getId());
                 articleCommentDto.setContent(comment.getContent());

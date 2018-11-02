@@ -114,6 +114,7 @@ public class ForeController extends BaseController{
     @ApiOperation("get all the notes")
     @GetMapping("note/list")
     public List<NoteDto> listAllNote() {
+
         return noteService.listAllNotes();
     }
 
@@ -122,6 +123,18 @@ public class ForeController extends BaseController{
     @GetMapping("note/list/latest")
     public List<NoteWithPictureDto> listLatestNote() {
         return noteService.listLatest();
+    }
+
+    // get the latest note
+    @ApiOperation("get the latest note with content")
+    @GetMapping("note/latest")
+    public NoteDto listLatestNoteWithContent() {
+        NoteDto noteDto = new NoteDto();
+        if(!noteService.listAllNotes().isEmpty()){
+            noteDto.setContent(Markdown2HtmlUtil.markdown2html(noteService.listAllNotes().get(0).getContent()));
+            return noteDto;
+        }
+        return null;
     }
 
     // get article from the note id
