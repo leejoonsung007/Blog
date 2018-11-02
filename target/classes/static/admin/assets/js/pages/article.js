@@ -25,8 +25,8 @@ $(document).ready(function () {
                     '</td><td>' + item.top +
                     '</td><td>' + item.traffic +
                     '</td><td><a href="' + item.pictureUrl + '">View</a></td>' +
-                    '<td><button class="btn btn-success" onclick="updateArticle(' + item.id + ')"><i class="fa fa-edit"></i> 编辑</button> ' +
-                    '<button class="btn btn-danger" onclick="deleteArticle(' + item.id + ')"><i class="fa fa-trash-o"> 删除</i></button></td></tr>');
+                    '<td><button class="btn btn-success" onclick="updateArticle(' + item.id + ')"><i class="fa fa-edit"></i> edit</button> ' +
+                    '<button class="btn btn-danger" onclick="deleteArticle(' + item.id + ')"><i class="fa fa-trash-o"> delete</i></button></td></tr>');
             });
             $('#dataTables-articles').dataTable();
 
@@ -59,8 +59,8 @@ document.getElementById("articleCategories").onchange = function () {
                     '</td><td>' + item.top +
                     '</td><td>' + item.traffic +
                     '</td><td><a href="' + item.pictureUrl + '">View</a></td>' +
-                    '<td><button class="btn btn-success" onclick="updateArticle(' + item.id + ')"><i class="fa fa-edit"></i> 编辑</button> ' +
-                    '<button class="btn btn-danger" onclick="deleteArticle(' + item.id + ')"><i class="fa fa-trash-o"> 删除</i></button></td></tr>');
+                    '<td><button class="btn btn-success" onclick="updateArticle(' + item.id + ')"><i class="fa fa-edit"></i> edit</button> ' +
+                    '<button class="btn btn-danger" onclick="deleteArticle(' + item.id + ')"><i class="fa fa-trash-o"> delete</i></button></td></tr>');
             });
             $('#dataTables-articles').dataTable();
 

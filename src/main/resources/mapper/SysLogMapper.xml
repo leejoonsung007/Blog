@@ -4,7 +4,7 @@
   <resultMap id="BaseResultMap" type="com.springboot.blog.entity.SysLog">
     <id column="id" jdbcType="BIGINT" property="id" />
     <result column="ip" jdbcType="VARCHAR" property="ip" />
-    <result column="create_by" jdbcType="TIMESTAMP" javaType="java.util.Date" property="createBy" />
+    <result column="create_by" jdbcType="TIMESTAMP" property="createBy" />
     <result column="remark" jdbcType="VARCHAR" property="remark" />
     <result column="operate_url" jdbcType="VARCHAR" property="operateUrl" />
     <result column="operate_by" jdbcType="VARCHAR" property="operateBy" />

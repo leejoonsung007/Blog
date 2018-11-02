@@ -295,52 +295,52 @@ public class ArticleCategoryExample {
             return (Criteria) this;
         }
 
-        public Criteria andCreateByEqualTo(Date value) {
+        public Criteria andCreateByEqualTo(Long value) {
             addCriterion("create_by =", value, "createBy");
             return (Criteria) this;
         }
 
-        public Criteria andCreateByNotEqualTo(Date value) {
+        public Criteria andCreateByNotEqualTo(Long value) {
             addCriterion("create_by <>", value, "createBy");
             return (Criteria) this;
         }
 
-        public Criteria andCreateByGreaterThan(Date value) {
+        public Criteria andCreateByGreaterThan(Long value) {
             addCriterion("create_by >", value, "createBy");
             return (Criteria) this;
         }
 
-        public Criteria andCreateByGreaterThanOrEqualTo(Date value) {
+        public Criteria andCreateByGreaterThanOrEqualTo(Long value) {
             addCriterion("create_by >=", value, "createBy");
             return (Criteria) this;
         }
 
-        public Criteria andCreateByLessThan(Date value) {
+        public Criteria andCreateByLessThan(Long value) {
             addCriterion("create_by <", value, "createBy");
             return (Criteria) this;
         }
 
-        public Criteria andCreateByLessThanOrEqualTo(Date value) {
+        public Criteria andCreateByLessThanOrEqualTo(Long value) {
             addCriterion("create_by <=", value, "createBy");
             return (Criteria) this;
         }
 
-        public Criteria andCreateByIn(List<Date> values) {
+        public Criteria andCreateByIn(List<Long> values) {
             addCriterion("create_by in", values, "createBy");
             return (Criteria) this;
         }
 
-        public Criteria andCreateByNotIn(List<Date> values) {
+        public Criteria andCreateByNotIn(List<Long> values) {
             addCriterion("create_by not in", values, "createBy");
             return (Criteria) this;
         }
 
-        public Criteria andCreateByBetween(Date value1, Date value2) {
+        public Criteria andCreateByBetween(Long value1, Long value2) {
             addCriterion("create_by between", value1, value2, "createBy");
             return (Criteria) this;
         }
 
-        public Criteria andCreateByNotBetween(Date value1, Date value2) {
+        public Criteria andCreateByNotBetween(Long value1, Long value2) {
             addCriterion("create_by not between", value1, value2, "createBy");
             return (Criteria) this;
         }

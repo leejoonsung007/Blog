@@ -2,7 +2,6 @@ package com.springboot.blog.dao;
 
 import com.springboot.blog.entity.ArticlePicture;
 import com.springboot.blog.entity.ArticlePictureExample;
-
 import java.util.List;
 
 public interface ArticlePictureMapper {

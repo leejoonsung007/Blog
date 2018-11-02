@@ -2,7 +2,6 @@ package com.springboot.blog.dao;
 
 import com.springboot.blog.entity.CategoryInfo;
 import com.springboot.blog.entity.CategoryInfoExample;
-
 import java.util.List;
 
 public interface CategoryInfoMapper {

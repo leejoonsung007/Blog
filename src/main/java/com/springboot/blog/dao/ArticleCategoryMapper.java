@@ -2,7 +2,6 @@ package com.springboot.blog.dao;
 
 import com.springboot.blog.entity.ArticleCategory;
 import com.springboot.blog.entity.ArticleCategoryExample;
-
 import java.util.List;
 
 public interface ArticleCategoryMapper {

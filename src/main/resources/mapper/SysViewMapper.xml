@@ -4,7 +4,7 @@
   <resultMap id="BaseResultMap" type="com.springboot.blog.entity.SysView">
     <id column="id" jdbcType="BIGINT" property="id" />
     <result column="ip" jdbcType="VARCHAR" property="ip" />
-    <result column="create_by" jdbcType="TIMESTAMP" javaType="java.sql.Date" property="createBy" />
+    <result column="create_by" jdbcType="TIMESTAMP" property="createBy" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>

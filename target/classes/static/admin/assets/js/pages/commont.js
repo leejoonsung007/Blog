@@ -36,7 +36,7 @@ function addCommentList(id) {
 					'</td><td>' + item.email +
 					'</td><td>' + item.ip +
 					'</td><td>' + item.createBy +
-					'</td><td><button class="btn btn-danger deleteBtn" onclick="deleteArticleComment(\'' + item.articleCommentId + '\')"><i class="fa fa-trash-o"></i>删除</button></td></tr>');
+					'</td><td><button class="btn btn-danger deleteBtn" onclick="deleteArticleComment(\'' + item.articleCommentId + '\')"><i class="fa fa-trash-o"></i>delete</button></td></tr>');
 			});
 			$('#dataTables-comments').dataTable();
 		}

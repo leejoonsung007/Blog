@@ -2,7 +2,6 @@ package com.springboot.blog.dao;
 
 import com.springboot.blog.entity.Comment;
 import com.springboot.blog.entity.CommentExample;
-
 import java.util.List;
 
 public interface CommentMapper {

@@ -2,11 +2,9 @@ package com.springboot.blog.dao;
 
 import com.springboot.blog.entity.SysView;
 import com.springboot.blog.entity.SysViewExample;
-
 import java.util.List;
 
 public interface SysViewMapper {
-
     int deleteByPrimaryKey(Long id);
 
     int insert(SysView record);

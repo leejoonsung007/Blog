@@ -2,7 +2,6 @@ package com.springboot.blog.dao;
 
 import com.springboot.blog.entity.ArticleInfo;
 import com.springboot.blog.entity.ArticleInfoExample;
-
 import java.util.List;
 
 public interface ArticleInfoMapper {

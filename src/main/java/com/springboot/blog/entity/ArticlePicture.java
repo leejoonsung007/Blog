@@ -1,7 +1,5 @@
 package com.springboot.blog.entity;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-
 import java.util.Date;
 
 public class ArticlePicture {
@@ -39,7 +37,6 @@ public class ArticlePicture {
         this.pictureUrl = pictureUrl == null ? null : pictureUrl.trim();
     }
 
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     public Date getCreateBy() {
         return createBy;
     }
@@ -48,7 +45,6 @@ public class ArticlePicture {
         this.createBy = createBy;
     }
 
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     public Date getModifiedBy() {
         return modifiedBy;
     }

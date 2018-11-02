@@ -1,7 +1,5 @@
 package com.springboot.blog.entity;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-
 import java.util.Date;
 
 public class Comment {
@@ -35,7 +33,6 @@ public class Comment {
         this.content = content == null ? null : content.trim();
     }
 
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     public Date getCreateBy() {
         return createBy;
     }

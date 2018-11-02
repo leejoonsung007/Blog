@@ -355,63 +355,63 @@ public class ArticleContentExample {
             return (Criteria) this;
         }
 
-        public Criteria andModifieldByIsNull() {
+        public Criteria andModifiedByIsNull() {
             addCriterion("modified_by is null");
             return (Criteria) this;
         }
 
-        public Criteria andModifieldByIsNotNull() {
+        public Criteria andModifiedByIsNotNull() {
             addCriterion("modified_by is not null");
             return (Criteria) this;
         }
 
-        public Criteria andModifieldByEqualTo(Date value) {
-            addCriterion("modified_by =", value, "modifieldBy");
+        public Criteria andModifiedByEqualTo(Date value) {
+            addCriterion("modified_by =", value, "modifiedBy");
             return (Criteria) this;
         }
 
-        public Criteria andModifieldByNotEqualTo(Date value) {
-            addCriterion("modified_by <>", value, "modifieldBy");
+        public Criteria andModifiedByNotEqualTo(Date value) {
+            addCriterion("modified_by <>", value, "modifiedBy");
             return (Criteria) this;
         }
 
-        public Criteria andModifieldByGreaterThan(Date value) {
-            addCriterion("modified_by >", value, "modifieldBy");
+        public Criteria andModifiedByGreaterThan(Date value) {
+            addCriterion("modified_by >", value, "modifiedBy");
             return (Criteria) this;
         }
 
-        public Criteria andModifieldByGreaterThanOrEqualTo(Date value) {
-            addCriterion("modified_by >=", value, "modifieldBy");
+        public Criteria andModifiedByGreaterThanOrEqualTo(Date value) {
+            addCriterion("modified_by >=", value, "modifiedBy");
             return (Criteria) this;
         }
 
-        public Criteria andModifieldByLessThan(Date value) {
-            addCriterion("modified_by <", value, "modifieldBy");
+        public Criteria andModifiedByLessThan(Date value) {
+            addCriterion("modified_by <", value, "modifiedBy");
             return (Criteria) this;
         }
 
-        public Criteria andModifieldByLessThanOrEqualTo(Date value) {
-            addCriterion("modified_by <=", value, "modifieldBy");
+        public Criteria andModifiedByLessThanOrEqualTo(Date value) {
+            addCriterion("modified_by <=", value, "modifiedBy");
             return (Criteria) this;
         }
 
-        public Criteria andModifieldByIn(List<Date> values) {
-            addCriterion("modified_by in", values, "modifieldBy");
+        public Criteria andModifiedByIn(List<Date> values) {
+            addCriterion("modified_by in", values, "modifiedBy");
             return (Criteria) this;
         }
 
-        public Criteria andModifieldByNotIn(List<Date> values) {
-            addCriterion("modified_by not in", values, "modifieldBy");
+        public Criteria andModifiedByNotIn(List<Date> values) {
+            addCriterion("modified_by not in", values, "modifiedBy");
             return (Criteria) this;
         }
 
-        public Criteria andModifieldByBetween(Date value1, Date value2) {
-            addCriterion("modified_by between", value1, value2, "modifieldBy");
+        public Criteria andModifiedByBetween(Date value1, Date value2) {
+            addCriterion("modified_by between", value1, value2, "modifiedBy");
             return (Criteria) this;
         }
 
-        public Criteria andModifieldByNotBetween(Date value1, Date value2) {
-            addCriterion("modified_by not between", value1, value2, "modifieldBy");
+        public Criteria andModifiedByNotBetween(Date value1, Date value2) {
+            addCriterion("modified_by not between", value1, value2, "modifiedBy");
             return (Criteria) this;
         }
     }

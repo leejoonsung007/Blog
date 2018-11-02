@@ -1,10 +1,12 @@
 package com.springboot.blog.controller;
 
 import com.springboot.blog.dto.ArticleDto;
+import com.springboot.blog.dto.NoteDto;
 import com.springboot.blog.entity.*;
 import com.springboot.blog.entity.CategoryInfo;
 import com.springboot.blog.entity.Comment;
 import com.springboot.blog.entity.User;
+import com.springboot.blog.service.NoteService;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
@@ -36,6 +38,8 @@ public class BackController extends BaseController {
         return null;
     }
 
+    //----------------------------------------article page--------------------------------------------------------
+
     //Add a article
     @ApiOperation("Add a article")
     @ApiImplicitParams({
@@ -54,7 +58,7 @@ public class BackController extends BaseController {
     }
 
     //Delete a article
-    @ApiOperation("Delete a article")
+    @ApiOperation("delete a article")
     @ApiImplicitParam(name = "id", value = "Article ID", required = true, dataType = "Long")
     @DeleteMapping("/article/{id}")
     public String deleteArticle(@PathVariable Long id) {
@@ -113,7 +117,6 @@ public class BackController extends BaseController {
         categoryService.addCategory(categoryInfo);
         return null;
     }
-
 
     // Update category
     @ApiOperation("Update/Edit the category")
@@ -185,5 +188,53 @@ public class BackController extends BaseController {
     @GetMapping("/article/{id}")
     public ArticleDto getArticleDtoById(@PathVariable Long id) {
         return articleService.getOneById(id);
+    }
+
+    //----------------------------------------note page--------------------------------------------------------
+    //Add a note
+    @ApiOperation("Add a note")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "title", value = "Title", required = true, dataType = "String"),
+            @ApiImplicitParam(name = "content", value = "Content", required = true, dataType = "String"),
+            @ApiImplicitParam(name = "isTop", value = "Topping", required = true, dataType = "Boolean"),
+            @ApiImplicitParam(name = "content", value = "MD code", required = true, dataType = "String"),
+            @ApiImplicitParam(name = "pictureUrl", value = "Picture URL", required = true, dataType = "String")
+    })
+    @PostMapping("note/")
+    public String addNote(@RequestBody NoteDto noteDto) {
+        noteService.addNote(noteDto);
+        return null;
+    }
+
+    //Delete a note
+    @ApiOperation("Delete a note")
+    @ApiImplicitParam(name = "id", value = "note ID", required = true, dataType = "Long")
+    @DeleteMapping("/note/{id}")
+    public String deleteNote(@PathVariable Long id) {
+        noteService.deleteNoteById(id);
+        return null;
+    }
+
+    //Update a note
+    @ApiOperation("update a note")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "title", value = "Title", required = true, dataType = "String"),
+            @ApiImplicitParam(name = "isTop", value = "Topping", required = true, dataType = "Boolean"),
+            @ApiImplicitParam(name = "content", value = "MD code", required = true, dataType = "String"),
+            @ApiImplicitParam(name = "pictureUrl", value = "Picture URL", required = true, dataType = "String")
+    })
+    @PutMapping("/note/{id}")
+    public String updateNote(@PathVariable Long id, @RequestBody NoteDto noteDto) {
+        noteDto.setId(id);
+        noteService.updateNote(noteDto);
+        return null;
+    }
+
+    // Get a article(md format)
+    @ApiOperation("Get a note(md format)")
+    @ApiImplicitParam(name = "id", value = "Article ID", required = true, dataType = "Long")
+    @GetMapping("/note/{id}")
+    public NoteDto getNoteDtoById(@PathVariable Long id) {
+        return noteService.getOneById(id);
     }
 }

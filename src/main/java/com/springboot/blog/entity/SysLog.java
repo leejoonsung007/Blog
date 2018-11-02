@@ -1,7 +1,5 @@
 package com.springboot.blog.entity;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-
 import java.util.Date;
 
 public class SysLog {
@@ -33,7 +31,6 @@ public class SysLog {
         this.ip = ip == null ? null : ip.trim();
     }
 
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     public Date getCreateBy() {
         return createBy;
     }

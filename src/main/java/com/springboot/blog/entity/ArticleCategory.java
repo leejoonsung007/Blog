@@ -1,7 +1,5 @@
 package com.springboot.blog.entity;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-
 import java.util.Date;
 
 public class ArticleCategory {
@@ -11,7 +9,7 @@ public class ArticleCategory {
 
     private Long articleId;
 
-    private Date createBy;
+    private Long createBy;
 
     private Date modifiedBy;
 
@@ -39,12 +37,11 @@ public class ArticleCategory {
         this.articleId = articleId;
     }
 
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
-    public Date getCreateBy() {
+    public Long getCreateBy() {
         return createBy;
     }
 
-    public void setCreateBy(Date createBy) {
+    public void setCreateBy(Long createBy) {
         this.createBy = createBy;
     }
 

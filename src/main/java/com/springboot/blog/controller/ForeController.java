@@ -1,8 +1,6 @@
 package com.springboot.blog.controller;
 
-import com.springboot.blog.dto.ArticleCommentDto;
-import com.springboot.blog.dto.ArticleDto;
-import com.springboot.blog.dto.ArticleWithPictureDto;
+import com.springboot.blog.dto.*;
 import com.springboot.blog.entity.*;
 import com.springboot.blog.entity.CategoryInfo;
 import com.springboot.blog.entity.Comment;
@@ -20,6 +18,7 @@ import java.util.List;
 @RequestMapping("/api")
 public class ForeController extends BaseController{
 
+    //------------------------------------------article page----------------------------------------------
     // get all articles
     @ApiOperation("get all the articles")
     @GetMapping("article/list")
@@ -50,7 +49,6 @@ public class ForeController extends BaseController{
         articleDto.setContent(Markdown2HtmlUtil.markdown2html(articleDto.getContent()));
         return articleDto;
     }
-
 
     // get all categories
     @ApiOperation("get all categories")
@@ -109,5 +107,29 @@ public class ForeController extends BaseController{
         commentService.addComment(comment);
 
         return null;
+    }
+
+    //------------------------------------------Note page----------------------------------------------
+    // get all articles
+    @ApiOperation("get all the notes")
+    @GetMapping("note/list")
+    public List<NoteWithPictureDto> listAllNoteInfo() {
+        return noteService.listAll();
+    }
+
+    // get the latest article
+    @ApiOperation("get the latest note")
+    @GetMapping("note/list/latest")
+    public List<NoteWithPictureDto> listLastestNote() {
+        return noteService.listLatest();
+    }
+
+    // get article from the article id
+    @ApiOperation("get article from the note id")
+    @GetMapping("note/{id}")
+    public NoteDto getNoteById(@PathVariable Long id) {
+        NoteDto noteDto = noteService.getOneById(id);
+        noteDto.setContent(Markdown2HtmlUtil.markdown2html(noteDto.getContent()));
+        return noteDto;
     }
 }

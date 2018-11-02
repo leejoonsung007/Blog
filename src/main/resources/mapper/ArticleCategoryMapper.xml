@@ -5,7 +5,7 @@
     <id column="id" jdbcType="BIGINT" property="id" />
     <result column="category_id" jdbcType="BIGINT" property="categoryId" />
     <result column="article_id" jdbcType="BIGINT" property="articleId" />
-    <result column="create_by" jdbcType="TIMESTAMP" property="createBy" />
+    <result column="create_by" jdbcType="BIGINT" property="createBy" />
     <result column="modified_by" jdbcType="TIMESTAMP" property="modifiedBy" />
   </resultMap>
   <sql id="Example_Where_Clause">
@@ -68,7 +68,7 @@
   <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.springboot.blog.entity.ArticleCategory" useGeneratedKeys="true">
     insert into tbl_article_category (category_id, article_id, create_by, 
       modified_by)
-    values (#{categoryId,jdbcType=BIGINT}, #{articleId,jdbcType=BIGINT}, #{createBy,jdbcType=TIMESTAMP}, 
+    values (#{categoryId,jdbcType=BIGINT}, #{articleId,jdbcType=BIGINT}, #{createBy,jdbcType=BIGINT}, 
       #{modifiedBy,jdbcType=TIMESTAMP})
   </insert>
   <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.springboot.blog.entity.ArticleCategory" useGeneratedKeys="true">
@@ -95,7 +95,7 @@
         #{articleId,jdbcType=BIGINT},
       </if>
       <if test="createBy != null">
-        #{createBy,jdbcType=TIMESTAMP},
+        #{createBy,jdbcType=BIGINT},
       </if>
       <if test="modifiedBy != null">
         #{modifiedBy,jdbcType=TIMESTAMP},
@@ -112,7 +112,7 @@
         article_id = #{articleId,jdbcType=BIGINT},
       </if>
       <if test="createBy != null">
-        create_by = #{createBy,jdbcType=TIMESTAMP},
+        create_by = #{createBy,jdbcType=BIGINT},
       </if>
       <if test="modifiedBy != null">
         modified_by = #{modifiedBy,jdbcType=TIMESTAMP},
@@ -124,7 +124,7 @@
     update tbl_article_category
     set category_id = #{categoryId,jdbcType=BIGINT},
       article_id = #{articleId,jdbcType=BIGINT},
-      create_by = #{createBy,jdbcType=TIMESTAMP},
+      create_by = #{createBy,jdbcType=BIGINT},
       modified_by = #{modifiedBy,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=BIGINT}
   </update>

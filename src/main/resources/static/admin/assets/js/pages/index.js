@@ -53,7 +53,7 @@ $(document).ready(function () {
                     '</td><td>' + item.name +
                     '</td><td>' + item.ip +
                     '</td><td>' + item.isEffective +
-                    '</td><td><button class="btn btn-danger deleteBtn" onclick="deleteComment(\'' + item.id + '\')"><i class="fa fa-trash-o"></i>删除</button></td></tr>');
+                    '</td><td><button class="btn btn-danger deleteBtn" onclick="deleteComment(\'' + item.id + '\')"><i class="fa fa-trash-o"></i>delete</button></td></tr>');
 
             });
             $('#dataTables-comments').dataTable();

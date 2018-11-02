@@ -6,7 +6,7 @@
     <result column="content" jdbcType="VARCHAR" property="content" />
     <result column="article_id" jdbcType="BIGINT" property="articleId" />
     <result column="create_by" jdbcType="TIMESTAMP" property="createBy" />
-    <result column="modified_by" jdbcType="TIMESTAMP" property="modifieldBy" />
+    <result column="modified_by" jdbcType="TIMESTAMP" property="modifiedBy" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -69,7 +69,7 @@
     insert into tbl_article_content (content, article_id, create_by, 
       modified_by)
     values (#{content,jdbcType=VARCHAR}, #{articleId,jdbcType=BIGINT}, #{createBy,jdbcType=TIMESTAMP}, 
-      #{modifieldBy,jdbcType=TIMESTAMP})
+      #{modifiedBy,jdbcType=TIMESTAMP})
   </insert>
   <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.springboot.blog.entity.ArticleContent" useGeneratedKeys="true">
     insert into tbl_article_content
@@ -83,7 +83,7 @@
       <if test="createBy != null">
         create_by,
       </if>
-      <if test="modifieldBy != null">
+      <if test="modifiedBy != null">
         modified_by,
       </if>
     </trim>
@@ -97,8 +97,8 @@
       <if test="createBy != null">
         #{createBy,jdbcType=TIMESTAMP},
       </if>
-      <if test="modifieldBy != null">
-        #{modifieldBy,jdbcType=TIMESTAMP},
+      <if test="modifiedBy != null">
+        #{modifiedBy,jdbcType=TIMESTAMP},
       </if>
     </trim>
   </insert>
@@ -114,8 +114,8 @@
       <if test="createBy != null">
         create_by = #{createBy,jdbcType=TIMESTAMP},
       </if>
-      <if test="modifieldBy != null">
-        modified_by = #{modifieldBy,jdbcType=TIMESTAMP},
+      <if test="modifiedBy != null">
+        modified_by = #{modifiedBy,jdbcType=TIMESTAMP},
       </if>
     </set>
     where id = #{id,jdbcType=BIGINT}
@@ -125,7 +125,7 @@
     set content = #{content,jdbcType=VARCHAR},
       article_id = #{articleId,jdbcType=BIGINT},
       create_by = #{createBy,jdbcType=TIMESTAMP},
-      modified_by = #{modifieldBy,jdbcType=TIMESTAMP}
+      modified_by = #{modifiedBy,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=BIGINT}
   </update>
 </mapper>

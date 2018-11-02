@@ -2,7 +2,6 @@ package com.springboot.blog.dao;
 
 import com.springboot.blog.entity.ArticleComment;
 import com.springboot.blog.entity.ArticleCommentExample;
-
 import java.util.List;
 
 public interface ArticleCommentMapper {

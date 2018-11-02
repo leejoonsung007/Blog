@@ -12,13 +12,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.*;
 
-/**
- * 文章Service实现类
- * 说明：ArticleInfo里面封装了picture/content/category等信息
- *
- * @author:wmyskxz
- * @create:2018-06-19-上午 9:29
- */
+
 @Service
 public class ArticleServiceImpl implements ArticleService {
 
@@ -35,96 +29,74 @@ public class ArticleServiceImpl implements ArticleService {
 
 	private static byte MAX_LASTEST_ARTICLE_COUNT = 5;
 
-	/**
-	 * 增加一篇文章信息
-	 * 说明：需要对应的写入tbl_article_picture/tbl_article_content/tbl_article_category表
-	 * 注意：使用的是Article封装类
-	 *
-	 * @param articleDto 文章封装类
-	 */
+	//add a new article
 	@Override
 	public void addArticle(ArticleDto articleDto) {
-		// 增加文章信息表 - title/summary
+		// add article info - title/summary
 		ArticleInfo articleInfo = new ArticleInfo();
 		articleInfo.setTitle(articleDto.getTitle());
 		articleInfo.setSummary(articleDto.getSummary());
 		articleInfoMapper.insertSelective(articleInfo);
-		// 获取刚才插入文章信息的ID
+		// get the id of the insertion article
 		Long articleId = getArticleLastestId();
-		// 增加文章题图信息 - pictureUrl/articleId
+		// set picture - pictureUrl/articleId
 		ArticlePicture articlePicture = new ArticlePicture();
 		articlePicture.setPictureUrl(articleDto.getPictureUrl());
 		articlePicture.setArticleId(articleId);
 		articlePictureMapper.insertSelective(articlePicture);
-		// 增加文章内容信息表 - content/articleId
+		// set article content  - content/articleId
 		ArticleContent articleContent = new ArticleContent();
 		articleContent.setContent(articleDto.getContent());
 		articleContent.setArticleId(articleId);
 		articleContentMapper.insertSelective(articleContent);
-		// 增加文章分类信息表 - articleId/categoryId
+		// set article category - articleId/categoryId
 		ArticleCategory articleCategory = new ArticleCategory();
 		articleCategory.setArticleId(articleId);
 		articleCategory.setCategoryId(articleDto.getCategoryId());
 		articleCategoryMapper.insertSelective(articleCategory);
-		// 对应文章的数量要加1
+		// set the number of article category
 		CategoryInfo categoryInfo = categoryInfoMapper.selectByPrimaryKey(articleCategory.getCategoryId());
 		categoryInfo.setNumber((byte) (categoryInfo.getNumber() + 1));
 		categoryInfoMapper.updateByPrimaryKeySelective(categoryInfo);
 	}
 
-	/**
-	 * 删除一篇文章
-	 * 说明：需要对应删除tbl_article_picture/tbl_article_content/tbl_article_category表中的内容
-	 *
-	 * @param id
-	 */
+	//delete a note
 	@Override
 	public void deleteArticleById(Long id) {
-		// 获取对应的文章信息
+		// get articleDto
 		ArticleDto articleDto = getOneById(id);
-		// 删除文章信息中的数据
+		// delete article info
 		articleInfoMapper.deleteByPrimaryKey(articleDto.getId());
-		// 删除文章题图信息数据
+		// delete article picture
 		articlePictureMapper.deleteByPrimaryKey(articleDto.getArticlePictureId());
-		// 删除文章内容信息表
+		// delete article content
 		articleContentMapper.deleteByPrimaryKey(articleDto.getArticleContentId());
-		// 删除文章分类信息表
+		// delete article category
 		articleCategoryMapper.deleteByPrimaryKey(articleDto.getArticleCategoryId());
 	}
 
-	/**
-	 * 更改文章的分类信息
-	 *
-	 * @param articleId
-	 * @param categoryId
-	 */
+	// update category data
 	@Override
 	public void updateArticleCategory(Long articleId, Long categoryId) {
 		ArticleCategoryExample example = new ArticleCategoryExample();
 		example.or().andArticleIdEqualTo(articleId);
 		ArticleCategory articleCategory = articleCategoryMapper.selectByExample(example).get(0);
-		// 对应改变分类下的文章数目
+		// change the number of articles belong to this category
 		CategoryInfo categoryInfo = categoryInfoMapper.selectByPrimaryKey(articleCategory.getCategoryId());
 		categoryInfo.setNumber((byte) (categoryInfo.getNumber() - 1));
 		categoryInfoMapper.updateByPrimaryKeySelective(categoryInfo);
 		categoryInfo = categoryInfoMapper.selectByPrimaryKey(categoryId);
 		categoryInfo.setNumber((byte) (categoryInfo.getNumber() + 1));
 		categoryInfoMapper.updateByPrimaryKeySelective(categoryInfo);
-		// 更新tbl_article_category表字段
+		// update tbl_article_category
 		articleCategory.setCategoryId(categoryId);
 		articleCategoryMapper.updateByPrimaryKeySelective(articleCategory);
 	}
 
-	/**
-	 * 更新文章信息
-	 * 说明：需要对应更改tbl_article_picture/tbl_article_content/tbl_article_category表中的内容
-	 * 注意：我们使用的是封装好的Article文章信息类
-	 *
-	 * @param articleDto 自己封装的Article信息类
-	 */
+	// update the article
 	@Override
 	public void updateArticle(ArticleDto articleDto) {
-		// 更新文章信息中的数据
+		// update article info
 		ArticleInfo articleInfo = new ArticleInfo();
 		articleInfo.setId(articleDto.getId());
 		articleInfo.setTitle(articleDto.getTitle());
@@ -132,70 +104,61 @@ public class ArticleServiceImpl implements ArticleService {
 		articleInfo.setIsTop(articleDto.getTop());
 		articleInfo.setTraffic(articleDto.getTraffic());
 		articleInfoMapper.updateByPrimaryKeySelective(articleInfo);
-		// 更新文章题图信息数据
+		// update article picture
 		ArticlePictureExample pictureExample = new ArticlePictureExample();
 		pictureExample.or().andArticleIdEqualTo(articleDto.getId());
 		ArticlePicture articlePicture = articlePictureMapper.selectByExample(pictureExample).get(0);
-//        articlePicture.setId(articleDto.getArticlePictureId());
 		articlePicture.setPictureUrl(articleDto.getPictureUrl());
 		articlePictureMapper.updateByPrimaryKeySelective(articlePicture);
-		// 更新文章内容信息数据
+
+		// update article content
 		ArticleContentExample contentExample = new ArticleContentExample();
 		contentExample.or().andArticleIdEqualTo(articleDto.getId());
 		ArticleContent articleContent = articleContentMapper.selectByExample(contentExample).get(0);
-//		articleContent.setArticleId(articleDto.getId());
-//		articleContent.setId(articleDto.getArticleContentId());
 		articleContent.setContent(articleDto.getContent());
 		articleContentMapper.updateByPrimaryKeySelective(articleContent);
-		// 更新文章分类信息表
+
+		// update category of article
 		ArticleCategoryExample categoryExample = new ArticleCategoryExample();
 		categoryExample.or().andArticleIdEqualTo(articleDto.getId());
 		ArticleCategory articleCategory = articleCategoryMapper.selectByExample(categoryExample).get(0);
-//        articleCategory.setId(articleDto.getArticleCategoryId());
 		articleCategory.setCategoryId(articleDto.getCategoryId());
 		articleCategoryMapper.updateByPrimaryKeySelective(articleCategory);
 	}
 
-	/**
-	 * 获取一篇文章内容
-	 * 说明：需要对应从tbl_article_picture/tbl_article_content/tbl_article_category表中获取内容
-	 * 并封装好
-	 *
-	 * @param id 文章ID
-	 * @return 填充好数据的ArticleInfo
-	 */
+	// get a article
 	@Override
 	public ArticleDto getOneById(Long id) {
 		ArticleDto articleDto = new ArticleDto();
-		// 填充文章基础信息
+		// get the article info
 		ArticleInfo articleInfo = articleInfoMapper.selectByPrimaryKey(id);
 		articleDto.setId(articleInfo.getId());
 		articleDto.setTitle(articleInfo.getTitle());
 		articleDto.setSummary(articleInfo.getSummary());
 		articleDto.setTop(articleInfo.getIsTop());
 		articleDto.setCreateBy(articleInfo.getCreateBy());
-		// 文章访问量要加1
+		// increase the number of view
 		articleInfo.setTraffic(articleInfo.getTraffic() + 1);
 		articleDto.setTraffic(articleInfo.getTraffic() + 1);
 		articleInfoMapper.updateByPrimaryKey(articleInfo);
-		// 填充文章内容信息
+		// get article content
 		ArticleContentExample example = new ArticleContentExample();
 		example.or().andArticleIdEqualTo(id);
 		ArticleContent articleContent = articleContentMapper.selectByExample(example).get(0);
 		articleDto.setContent(articleContent.getContent());
 		articleDto.setArticleContentId(articleContent.getId());
-		// 填充文章题图信息
+		// get article picture
 		ArticlePictureExample example1 = new ArticlePictureExample();
 		example1.or().andArticleIdEqualTo(id);
 		ArticlePicture articlePicture = articlePictureMapper.selectByExample(example1).get(0);
 		articleDto.setPictureUrl(articlePicture.getPictureUrl());
 		articleDto.setArticlePictureId(articlePicture.getId());
-		// 填充文章分类信息
+		// get the category
 		ArticleCategoryExample example2 = new ArticleCategoryExample();
 		example2.or().andArticleIdEqualTo(id);
 		ArticleCategory articleCategory = articleCategoryMapper.selectByExample(example2).get(0);
 		articleDto.setArticleCategoryId(articleCategory.getId());
-		// 填充文章分类基础信息
+		// get category info
 		CategoryInfoExample example3 = new CategoryInfoExample();
 		example3.or().andIdEqualTo(articleCategory.getCategoryId());
 		CategoryInfo categoryInfo = categoryInfoMapper.selectByExample(example3).get(0);
@@ -205,16 +168,12 @@ public class ArticleServiceImpl implements ArticleService {
 		return articleDto;
 	}
 
-	/**
-	 * 获取所有的文章内容
-	 *
-	 * @return 封装好的Article集合
-	 */
+	// get all articles
 	@Override
 	public List<ArticleWithPictureDto> listAll() {
-		// 1.先获取所有的数据
+		// 1.get all data first
 		List<ArticleWithPictureDto> articles = listAllArticleWithPicture();
-		// 2.然后再对集合进行重排，置顶的文章在前
+		// 2.sort and put the topping article to the first place
 		LinkedList<ArticleWithPictureDto> list = new LinkedList<>();
 		for (int i = 0; i < articles.size(); i++) {
 			if (true == articles.get(i).getTop()) {
@@ -228,12 +187,7 @@ public class ArticleServiceImpl implements ArticleService {
 		return articles;
 	}
 
-	/**
-	 * 通过分类id返回该分类下的所有文章
-	 *
-	 * @param id 分类ID
-	 * @return 对应分类ID下的所有文章(带题图)
-	 */
+	// get all article belongs to the category
 	@Override
 	public List<ArticleWithPictureDto> listByCategoryId(Long id) {
 		ArticleCategoryExample example = new ArticleCategoryExample();
@@ -243,7 +197,7 @@ public class ArticleServiceImpl implements ArticleService {
 		for (int i = 0; i < articleCategories.size(); i++) {
 			Long articleId = articleCategories.get(i).getArticleId();
 			ArticleWithPictureDto articleWithPictureDto = new ArticleWithPictureDto();
-			// 填充文章基础信息
+			// get article Info
 			ArticleInfoExample example1 = new ArticleInfoExample();
 			example1.or().andIdEqualTo(articleId);
 			ArticleInfo articleInfo = articleInfoMapper.selectByExample(example1).get(0);
@@ -252,7 +206,7 @@ public class ArticleServiceImpl implements ArticleService {
 			articleWithPictureDto.setSummary(articleInfo.getSummary());
 			articleWithPictureDto.setTop(articleInfo.getIsTop());
 			articleWithPictureDto.setTraffic(articleInfo.getTraffic());
-			// 填充文章图片信息
+			// get picture example
 			ArticlePictureExample example2 = new ArticlePictureExample();
 			example2.or().andArticleIdEqualTo(articleInfo.getId());
 			ArticlePicture articlePicture = articlePictureMapper.selectByExample(example2).get(0);
@@ -262,7 +216,7 @@ public class ArticleServiceImpl implements ArticleService {
 		}
 
 
-		// 对集合进行重排，置顶的文章在前
+		// re-sort, put the topping articles to the first position
 		LinkedList<ArticleWithPictureDto> list = new LinkedList<>();
 		for (int i = 0; i < articles.size(); i++) {
 			if (true == articles.get(i).getTop()) {
@@ -299,31 +253,6 @@ public class ArticleServiceImpl implements ArticleService {
 		// 4.不大于五个则直接返回
 		return articles;
 	}
-
-//    /**
-//     * 为ArticleInfo填充对应的content/picture/category信息
-//     * 说明：每一个ArticleInfo必有对应的这些信息，这是在增加时限制的
-//     *
-//     * @param articleInfo
-//     */
-//    private void fill(ArticleInfo articleInfo) {
-//        Long articleId = articleInfo.getId();
-//        // 填充picture信息
-//        ArticlePictureExample example = new ArticlePictureExample();
-//        example.or().andArticleIdEqualTo(articleId);
-//        List<ArticlePicture> articlePictures = articlePictureMapper.selectByExample(example);
-//        articleInfo.setArticlePicture(articlePictures.get(0));
-//        // 填充content信息
-//        ArticleContentExample example1 = new ArticleContentExample();
-//        example1.or().andArticleIdEqualTo(articleId);
-//        List<ArticleContent> articleContents = articleContentMapper.selectByExample(example1);
-//        articleInfo.setArticleContent(articleContents.get(0));
-//        // 填充category信息
-//        ArticleCategoryExample example2 = new ArticleCategoryExample();
-//        example2.or().andArticleIdEqualTo(articleId);
-//        List<ArticleCategory> articleCategories = articleCategoryMapper.selectByExample(example2);
-//        articleInfo.setArticleCategory(articleCategories.get(0));
-//    }
 
 	/**
 	 * 返回最新插入一条数据的ID

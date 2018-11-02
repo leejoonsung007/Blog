@@ -2,7 +2,6 @@ package com.springboot.blog.dao;
 
 import com.springboot.blog.entity.SysLog;
 import com.springboot.blog.entity.SysLogExample;
-
 import java.util.List;
 
 public interface SysLogMapper {
