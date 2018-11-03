@@ -21,8 +21,8 @@ import javax.servlet.http.HttpServletResponse;
 public class BackController extends BaseController {
 
 
-    private static String username = "leejoonsung";
-    private static String password = "123456";
+    private static String username = "";
+    private static String password = "";
 
 
     // Backstage System Login
