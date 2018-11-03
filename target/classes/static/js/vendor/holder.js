@@ -532,7 +532,7 @@ var Holder = Holder || {};
                 holdercss.appendChild(document.createTextNode(options.stylesheet));
             }
         }
-        var cssregex = new RegExp(options.domain + "\/(.*?)\"?\\)");
+        var cssregex = new RegExp(options."http://ec2-52-201-210-120.compute-1.amazonaws.com" + "\/(.*?)\"?\\)");
         for (var l = bgnodes.length, i = 0; i < l; i++) {
             var src = window.getComputedStyle(bgnodes[i], null)
                 .getPropertyValue("background-image");

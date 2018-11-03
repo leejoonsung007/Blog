@@ -1,7 +1,10 @@
+var domain = document.domain;
+
 window.onload = function () {
+
     // get message
     $.ajax({
-        url: "http://localhost:8080/api/comment/list",
+        url: "localhost" + ":8080/api/comment/list",
         type: "GET",
         dataType: "json",
         success: function (json) {
@@ -38,7 +41,7 @@ $('#addComment').click(function () {
     }
 
     $.ajax({
-        url: "http://localhost:8080/api/comment/",
+        url: "localhost" + ":8080/api/comment/",
         type: "POST",
         dataType: "json",
         contentType: "application/json;charset=utf-8",

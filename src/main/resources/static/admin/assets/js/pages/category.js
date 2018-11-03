@@ -1,7 +1,9 @@
+var domain = document.domain;
+
 $(document).ready(function() {
 	// fill the traffic data
 	$.ajax({
-		url: "http://localhost:8080/api/category/list",
+		url: "localhost" + ":8080/api/category/list",
 		type: "GET",
 		dataType: "json",
 		success: function(json) {
@@ -33,7 +35,7 @@ $('#confirmBtn').click(function() {
 	var id = $(this).attr("categoryId");
 	$.ajax({
 		type: "DELETE",
-		url: "http://localhost:8080/admin/category/" + id,
+		url: "localhost" + ":8080/admin/category/" + id,
 		success: function() {
 			// refresh
 			location.reload();
@@ -51,7 +53,7 @@ $('#addCategoryBtn').click(function() {
 		type: "POST",
 		dataType: "json",
 		contentType: "application/json;charset=utf-8",
-		url: "http://localhost:8080/admin/category",
+		url: "localhost" + ":8080/admin/category",
 		data: JSON.stringify(json),
 		success: function() {
 			// Refresh
@@ -73,7 +75,7 @@ $('#updateCategoryBtn').click(function() {
 	};
 	$.ajax({
 		type: "PUT",
-		url: "http://localhost:8080/admin/category/" + categoryId,
+		url: "localhost" + ":8080/admin/category/" + categoryId,
 		data: JSON.stringify(categoryJson),
 		dataType: "json",
 		contentType: "application/json;charset=utf-8",
@@ -86,4 +88,4 @@ $('#updateCategoryBtn').click(function() {
 			location.reload();
 		}
 	})
-})
+});

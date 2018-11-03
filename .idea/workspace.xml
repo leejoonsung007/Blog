@@ -1,37 +1,156 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dea1085d-08d7-45f2-bb0f-936f151182ce" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/img/about/github.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/img/about/linkedin.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/img/avatar.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/img/dividing_line.png" />
+    <list default="true" id="dea1085d-08d7-45f2-bb0f-936f151182ce" name="Default" comment="updaye">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/img/about/gmail.png" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/blog/BlogApplication.java" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/blog/BlogApplication.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/blog/controller/ForeController.java" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/blog/controller/ForeController.java" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/blog/service/impl/CategoryServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/blog/service/impl/CategoryServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/blog/service/impl/CommentServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/blog/service/impl/CommentServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/blog/service/impl/NoteServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/blog/service/impl/NoteServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log/wmyskxz/logback.2018-10-31.log" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" afterPath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/about.html" afterPath="$PROJECT_DIR$/src/main/resources/static/about.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/article.html" afterPath="$PROJECT_DIR$/src/main/resources/static/article.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/article.html" afterPath="$PROJECT_DIR$/src/main/resources/static/admin/article.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/assets/js/pages/article.js" afterPath="$PROJECT_DIR$/src/main/resources/static/admin/assets/js/pages/article.js" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/assets/js/pages/category.js" afterPath="$PROJECT_DIR$/src/main/resources/static/admin/assets/js/pages/category.js" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/assets/js/pages/commont.js" afterPath="$PROJECT_DIR$/src/main/resources/static/admin/assets/js/pages/commont.js" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/assets/js/pages/index.js" afterPath="$PROJECT_DIR$/src/main/resources/static/admin/assets/js/pages/index.js" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/assets/js/pages/note.js" afterPath="$PROJECT_DIR$/src/main/resources/static/admin/assets/js/pages/note.js" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/category.html" afterPath="$PROJECT_DIR$/src/main/resources/static/admin/category.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/comment.html" afterPath="$PROJECT_DIR$/src/main/resources/static/admin/comment.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/index.html" afterPath="$PROJECT_DIR$/src/main/resources/static/admin/index.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/note.html" afterPath="$PROJECT_DIR$/src/main/resources/static/admin/note.html" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/blog.html" afterPath="$PROJECT_DIR$/src/main/resources/static/blog.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/about.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/about.css" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/head.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/about.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/about.js" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/article.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/article.js" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/blog.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/blog.js" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/footer.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/header.js" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/index.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/index.js" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/note.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/note.js" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/vendor/holder.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/vendor/holder.js" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/note.html" afterPath="$PROJECT_DIR$/src/main/resources/static/note.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/controller/ForeController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="$PROJECT_DIR$/target/classes/application.properties" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/BlogApplication.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/BlogApplication.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/config/MyWebMvcConfigurerAdapter.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/config/MyWebMvcConfigurerAdapter.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/controller/BackController.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/controller/BackController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/controller/ForeController.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/controller/ForeController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/dao/ArticleCategoryMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/dao/ArticleCategoryMapper.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/dao/ArticleCommentMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/dao/ArticleCommentMapper.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/dao/ArticleContentMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/dao/ArticleContentMapper.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/dao/ArticleInfoMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/dao/ArticleInfoMapper.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/dao/ArticlePictureMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/dao/ArticlePictureMapper.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/dao/CategoryInfoMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/dao/CategoryInfoMapper.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/dao/CommentMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/dao/CommentMapper.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/dao/NoteContentMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/dao/NoteContentMapper.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/dao/NoteInfoMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/dao/NoteInfoMapper.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/dao/NotePictureMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/dao/NotePictureMapper.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/dao/SysLogMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/dao/SysLogMapper.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/dao/SysViewMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/dao/SysViewMapper.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/dto/ArticleCategoryDto.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/dto/ArticleCategoryDto.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/dto/ArticleCommentDto.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/dto/ArticleCommentDto.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/dto/ArticleDto.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/dto/ArticleDto.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/dto/ArticleWithPictureDto.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/dto/ArticleWithPictureDto.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/dto/NoteDto.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/dto/NoteDto.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/dto/NoteWithPictureDto.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/dto/NoteWithPictureDto.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleCategory.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleCategory.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleCategoryExample$Criteria.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleCategoryExample$Criteria.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleCategoryExample$Criterion.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleCategoryExample$Criterion.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleCategoryExample$GeneratedCriteria.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleCategoryExample$GeneratedCriteria.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleCategoryExample.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleCategoryExample.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleComment.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleComment.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleCommentExample$Criteria.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleCommentExample$Criteria.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleCommentExample$Criterion.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleCommentExample$Criterion.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleCommentExample$GeneratedCriteria.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleCommentExample$GeneratedCriteria.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleCommentExample.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleCommentExample.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleContent.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleContent.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleContentExample$Criteria.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleContentExample$Criteria.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleContentExample$Criterion.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleContentExample$Criterion.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleContentExample$GeneratedCriteria.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleContentExample$GeneratedCriteria.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleContentExample.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleContentExample.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleInfo.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleInfo.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleInfoExample$Criteria.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleInfoExample$Criteria.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleInfoExample$Criterion.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleInfoExample$Criterion.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleInfoExample$GeneratedCriteria.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleInfoExample$GeneratedCriteria.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleInfoExample.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticleInfoExample.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticlePicture.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticlePicture.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticlePictureExample$Criteria.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticlePictureExample$Criteria.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticlePictureExample$Criterion.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticlePictureExample$Criterion.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticlePictureExample$GeneratedCriteria.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticlePictureExample$GeneratedCriteria.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticlePictureExample.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/ArticlePictureExample.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/CategoryInfo.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/CategoryInfo.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/CategoryInfoExample$Criteria.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/CategoryInfoExample$Criteria.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/CategoryInfoExample$Criterion.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/CategoryInfoExample$Criterion.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/CategoryInfoExample$GeneratedCriteria.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/CategoryInfoExample$GeneratedCriteria.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/CategoryInfoExample.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/CategoryInfoExample.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/Comment.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/Comment.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/CommentExample$Criteria.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/CommentExample$Criteria.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/CommentExample$Criterion.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/CommentExample$Criterion.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/CommentExample$GeneratedCriteria.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/CommentExample$GeneratedCriteria.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/CommentExample.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/CommentExample.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/NoteContent.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/NoteContent.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/NoteContentExample$Criteria.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/NoteContentExample$Criteria.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/NoteContentExample$Criterion.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/NoteContentExample$Criterion.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/NoteContentExample$GeneratedCriteria.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/NoteContentExample$GeneratedCriteria.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/NoteContentExample.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/NoteContentExample.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/NoteInfo.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/NoteInfo.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/NoteInfoExample$Criteria.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/NoteInfoExample$Criteria.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/NoteInfoExample$Criterion.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/NoteInfoExample$Criterion.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/NoteInfoExample$GeneratedCriteria.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/NoteInfoExample$GeneratedCriteria.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/NoteInfoExample.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/NoteInfoExample.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/NotePicture.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/NotePicture.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/NotePictureExample$Criteria.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/NotePictureExample$Criteria.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/NotePictureExample$Criterion.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/NotePictureExample$Criterion.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/NotePictureExample$GeneratedCriteria.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/NotePictureExample$GeneratedCriteria.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/NotePictureExample.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/NotePictureExample.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/SysLog.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/SysLog.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/SysLogExample$Criteria.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/SysLogExample$Criteria.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/SysLogExample$Criterion.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/SysLogExample$Criterion.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/SysLogExample$GeneratedCriteria.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/SysLogExample$GeneratedCriteria.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/SysLogExample.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/SysLogExample.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/SysView.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/SysView.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/SysViewExample$Criteria.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/SysViewExample$Criteria.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/SysViewExample$Criterion.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/SysViewExample$Criterion.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/SysViewExample$GeneratedCriteria.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/SysViewExample$GeneratedCriteria.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/SysViewExample.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/SysViewExample.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/User.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/entity/User.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/filter/SimpleCORSFilter.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/filter/SimpleCORSFilter.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/generator/MybatisGenerator.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/generator/MybatisGenerator.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/interceptor/BackInterceptor.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/interceptor/BackInterceptor.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/interceptor/ForeInterceptor.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/interceptor/ForeInterceptor.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/service/ArticleService.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/service/ArticleService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/service/CategoryService.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/service/CategoryService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/service/CommentService.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/service/CommentService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/service/NoteService.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/service/NoteService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/service/SysService.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/service/SysService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/service/impl/ArticleServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/service/impl/ArticleServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/service/impl/CategoryServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/service/impl/CategoryServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/service/impl/CommentServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/service/impl/CommentServiceImpl.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/service/impl/NoteServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/service/impl/NoteServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/service/impl/SysServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/service/impl/SysServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/util/BrowserUtil.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/util/BrowserUtil.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/util/Markdown2HtmlUtil.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/util/Markdown2HtmlUtil.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/blog/util/OverIsMergeablePlugin.class" afterPath="$PROJECT_DIR$/target/classes/com/springboot/blog/util/OverIsMergeablePlugin.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log/wmyskxz/logback.2018-10-31.log" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logback-spring.xml" afterPath="$PROJECT_DIR$/target/classes/logback-spring.xml" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/Note.html" afterPath="$PROJECT_DIR$/target/classes/static/Note.html" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/about.html" afterPath="$PROJECT_DIR$/target/classes/static/about.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/article.html" afterPath="$PROJECT_DIR$/target/classes/static/article.html" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/assets/js/pages/article.js" afterPath="$PROJECT_DIR$/target/classes/static/admin/assets/js/pages/article.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/assets/js/pages/category.js" afterPath="$PROJECT_DIR$/target/classes/static/admin/assets/js/pages/category.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/assets/js/pages/commont.js" afterPath="$PROJECT_DIR$/target/classes/static/admin/assets/js/pages/commont.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/assets/js/pages/index.js" afterPath="$PROJECT_DIR$/target/classes/static/admin/assets/js/pages/index.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/admin/assets/js/pages/note.js" afterPath="$PROJECT_DIR$/target/classes/static/admin/assets/js/pages/note.js" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/blog.html" afterPath="$PROJECT_DIR$/target/classes/static/blog.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/about.css" afterPath="$PROJECT_DIR$/target/classes/static/css/about.css" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/head.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" afterPath="$PROJECT_DIR$/target/classes/static/index.html" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/note.css" afterPath="$PROJECT_DIR$/target/classes/static/css/note.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/about.js" afterPath="$PROJECT_DIR$/target/classes/static/js/about.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/article.js" afterPath="$PROJECT_DIR$/target/classes/static/js/article.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/blog.js" afterPath="$PROJECT_DIR$/target/classes/static/js/blog.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/footer.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/header.js" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/js/index.js" afterPath="$PROJECT_DIR$/target/classes/static/js/index.js" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/js/note.js" afterPath="$PROJECT_DIR$/target/classes/static/js/note.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/vendor/holder.js" afterPath="$PROJECT_DIR$/target/classes/static/js/vendor/holder.js" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,30 +160,118 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="NoteServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/blog/service/impl/NoteServiceImpl.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="article.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/assets/js/pages/article.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="96" column="52" lean-forward="true" selection-start-line="96" selection-start-column="52" selection-end-line="96" selection-end-column="52" />
-              <folding>
-                <element signature="method#getNoteLatestId#0;class#NoteServiceImpl#0" expanded="false" />
-                <element signature="method#listAllNotesWithPicture#0;class#NoteServiceImpl#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="75">
+              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommentServiceImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/blog/service/impl/CommentServiceImpl.java">
+      <file leaf-file-name="note.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/note.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="23" column="46" lean-forward="true" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
-              <folding>
-                <element signature="e#884#885#0" expanded="true" />
-                <element signature="e#938#939#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="278">
+              <caret line="59" column="70" lean-forward="true" selection-start-line="59" selection-start-column="70" selection-end-line="59" selection-end-column="82" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="365">
+              <caret line="55" column="62" lean-forward="false" selection-start-line="55" selection-start-column="62" selection-end-line="55" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="comment.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/comment.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="373">
+              <caret line="59" column="62" lean-forward="false" selection-start-line="59" selection-start-column="62" selection-end-line="59" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="category.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/category.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="59" column="62" lean-forward="false" selection-start-line="59" selection-start-column="62" selection-end-line="59" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="article.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/article.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="52" column="20" lean-forward="true" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/about.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1140">
+              <caret line="76" column="122" lean-forward="true" selection-start-line="76" selection-start-column="122" selection-end-line="76" selection-end-column="122" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logback-spring.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/logback-spring.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-36">
+              <caret line="4" column="37" lean-forward="false" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="note.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/assets/js/pages/note.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="185">
+              <caret line="114" column="54" lean-forward="false" selection-start-line="114" selection-start-column="54" selection-end-line="114" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -84,13 +291,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>articleId</find>
-      <find>updateArticle</find>
-      <find>statistics</find>
-      <find>addnote</find>
-      <find>article</find>
-      <find>noteb</find>
-      <find>add</find>
       <find>create_by</find>
       <find>sort_BOth</find>
       <find>sort</find>
@@ -114,11 +314,22 @@
       <find>latest</find>
       <find>setcomment</find>
       <find>setcontent</find>
+      <find>js</find>
+      <find>http</find>
+      <find>domain +</find>
+      <find>http://ec2-52-201-210-120.compute-1.amazonaws.com</find>
+      <find>确认添加</find>
+      <find>host</find>
+      <find>&quot;http://ec2-52-201-210-120.compute-1.amazonaws.com&quot;</find>
     </findStrings>
     <replaceStrings>
       <replace>edit</replace>
       <replace>delete</replace>
       <replace>Statistics</replace>
+      <replace>http://ec2-52-201-210-120.compute-1.amazonaws.com</replace>
+      <replace>&quot;http://ec2-52-201-210-120.compute-1.amazonaws.com&quot; +</replace>
+      <replace>add</replace>
+      <replace>&quot;localhost&quot;</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/main/resources</dir>
@@ -149,8 +360,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/static/error/404.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/css/article.css" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/header.js" />
         <option value="$PROJECT_DIR$/src/main/resources/static/css/index.css" />
         <option value="$PROJECT_DIR$/src/main/resources/static/login.html" />
@@ -160,39 +369,48 @@
         <option value="$PROJECT_DIR$/src/main/java/com/springboot/blog/entity/NotePicture.java" />
         <option value="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/springboot/blog/controller/BaseController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/admin/article.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/admin/comment.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/admin/index.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/admin/category.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/admin/assets/js/dataTables/dataTables.bootstrap.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/springboot/blog/service/impl/ArticleServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springboot/blog/dto/NoteDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springboot/blog/controller/BackController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springboot/blog/filter/SimpleCORSFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springboot/blog/generator/MybatisGenerator.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/admin/assets/js/pages/note.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/springboot/blog/entity/NoteContent.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springboot/blog/entity/NoteContentExample.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/admin/note.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/springboot/blog/dto/NoteWithPictureDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springboot/blog/service/NoteService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/admin/assets/js/pages/article.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/blog.js" />
         <option value="$PROJECT_DIR$/src/main/resources/static/TEST.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/article.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/blog.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/about.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/css/about.css" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/note.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/springboot/blog/BlogApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/index.js" />
         <option value="$PROJECT_DIR$/src/main/resources/static/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/springboot/blog/controller/ForeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springboot/blog/service/impl/NoteServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/css/note.css" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/note.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/blog/service/impl/CategoryServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springboot/blog/service/impl/CommentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/blog/service/impl/CategoryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/log/logback.2018-10-31.log" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/blog.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/note.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/about.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/article.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/blog.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/index.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/note.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/admin/assets/js/pages/category.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/admin/assets/js/pages/commont.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/admin/assets/js/pages/index.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/admin/assets/js/pages/note.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/logback-spring.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/admin/note.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/admin/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/admin/comment.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/admin/category.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/admin/article.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/about.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/admin/assets/js/pages/article.js" />
       </list>
     </option>
   </component>
@@ -208,11 +426,37 @@
         <option name="mavenHome" value="$USER_HOME$/Document/Maven/apache-maven-3.5.4" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="blog" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="blog" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="blog" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="160" />
-    <option name="y" value="23" />
-    <option name="width" value="1287" />
+    <option name="x" value="40" />
+    <option name="y" value="37" />
+    <option name="width" value="1400" />
     <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -231,6 +475,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -252,28 +497,73 @@
             <path>
               <item name="blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="Blog" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="about" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="Blog" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Blog" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="generated-test-sources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -295,9 +585,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static/img/about" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/img" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/img/login" />
-      <recent name="$PROJECT_DIR$/src/main/resources/static/img/about" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -466,46 +756,50 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1541015470188</updated>
-      <workItem from="1541015471488" duration="69474000" />
+      <workItem from="1541015471488" duration="71232000" />
+      <workItem from="1541197866817" duration="765000" />
+      <workItem from="1541199493243" duration="2010000" />
+      <workItem from="1541240086636" duration="1786000" />
+      <workItem from="1541242842062" duration="4657000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69474000" />
+    <option name="totallyTimeSpent" value="80450000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="160" y="23" width="1287" height="877" extended-state="0" />
+    <frame x="40" y="37" width="1400" height="877" extended-state="0" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.255627" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24947442" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29923275" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3056266" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2554217" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29923275" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3746803" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29028133" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16568483" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29028133" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -514,6 +808,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="updaye" />
+    <option name="LAST_COMMIT_MESSAGE" value="updaye" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -526,231 +824,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/blog/service/ArticleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/assets/js/pages/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/blog/generator/MybatisGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/blog/controller/SysController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/blog/controller/BaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/blog/config/MyWebMvcConfigurerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-163">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/blog/util/Markdown2HtmlUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/assets/js/pages/note.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="48" column="20" lean-forward="true" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/blog/entity/NoteContentExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="41" column="4" lean-forward="false" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/blog/dto/ArticleDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/blog/entity/NoteContent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="56" column="18" lean-forward="false" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/blog/entity/ArticleContent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/about.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/blog/dto/NoteWithPictureDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/blog/dto/NoteDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="57" column="20" lean-forward="false" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/note.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="692">
-          <caret line="236" column="0" lean-forward="true" selection-start-line="236" selection-start-column="0" selection-end-line="236" selection-end-column="0" />
-          <folding>
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/assets/js/pages/article.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="105" column="61" lean-forward="false" selection-start-line="105" selection-start-column="57" selection-end-line="105" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/article.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-32">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/blog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="41" column="19" lean-forward="false" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/article.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="92" column="117" lean-forward="false" selection-start-line="92" selection-start-column="98" selection-end-line="92" selection-end-column="117" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/lrtk.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/blog.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="49" column="78" lean-forward="true" selection-start-line="49" selection-start-column="78" selection-end-line="49" selection-end-column="92" />
-          <folding>
-            <marker date="1541026735239" expanded="true" signature="1906:1936" ph="..." />
-            <marker date="1541026735239" expanded="true" signature="2459:2491" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/img/head.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/TEST.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/article.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="74" column="40" lean-forward="false" selection-start-line="74" selection-start-column="34" selection-end-line="74" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/blog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="37" column="43" lean-forward="false" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/TEST.html" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -783,17 +861,160 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/blog/controller/BackController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="20" column="9" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/blog/service/NoteService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="25" column="33" lean-forward="false" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="93" column="16" lean-forward="true" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/blog/service/CommentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/note.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/blog/controller/ForeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6">
+          <caret line="114" column="28" lean-forward="true" selection-start-line="114" selection-start-column="28" selection-end-line="114" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/blog/service/impl/ArticleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1409">
+          <caret line="153" column="65" lean-forward="false" selection-start-line="153" selection-start-column="65" selection-end-line="153" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/blog/service/impl/SysServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-257">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/blog/service/impl/NoteServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1245">
+          <caret line="96" column="52" lean-forward="false" selection-start-line="96" selection-start-column="52" selection-end-line="96" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/blog/service/impl/CommentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="23" column="46" lean-forward="false" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="74" column="27" lean-forward="false" selection-start-line="74" selection-start-column="27" selection-end-line="74" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/about.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/blog/service/CategoryService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="51" column="11" lean-forward="false" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="11" />
+        <state relative-caret-position="225">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/blog/service/impl/CategoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/blog/Swagger2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log/logback.2018-10-31.log" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="125" column="0" lean-forward="false" selection-start-line="125" selection-start-column="0" selection-end-line="126" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/blog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="76" column="14" lean-forward="false" selection-start-line="76" selection-start-column="14" selection-end-line="76" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/note.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/footer.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/header.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/assets/js/custom-scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/assets/js/jquery.metisMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/assets/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -806,136 +1027,157 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/blog/controller/BackController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/about.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="20" column="9" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="9" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/blog/service/NoteService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/article.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="25" column="33" lean-forward="false" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+        <state relative-caret-position="95">
+          <caret line="72" column="28" lean-forward="false" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/blog.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="93" column="16" lean-forward="true" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
+        <state relative-caret-position="246">
+          <caret line="94" column="12" lean-forward="false" selection-start-line="94" selection-start-column="12" selection-end-line="94" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/blog/service/CommentService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/getUrlParam.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/blog/service/CategoryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="30" column="45" lean-forward="true" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/note.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-141">
-          <caret line="7" column="61" lean-forward="true" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/note.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+        <state relative-caret-position="-116">
+          <caret line="28" column="28" lean-forward="false" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/note.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="10" lean-forward="false" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+        <state relative-caret-position="45">
+          <caret line="3" column="15" lean-forward="true" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
           <folding>
-            <marker date="1541195144405" expanded="true" signature="494:505" ph="..." />
+            <marker date="1541249093577" expanded="true" signature="523:534" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/blog/controller/ForeController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/assets/js/pages/category.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
-          <caret line="114" column="28" lean-forward="true" selection-start-line="114" selection-start-column="28" selection-end-line="114" selection-end-column="28" />
-          <folding>
-            <element signature="e#4663#4664#0" expanded="true" />
-            <element signature="e#4710#4711#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/blog/service/impl/ArticleServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1409">
-          <caret line="153" column="65" lean-forward="false" selection-start-line="153" selection-start-column="65" selection-end-line="153" selection-end-column="65" />
+        <state relative-caret-position="230">
+          <caret line="77" column="73" lean-forward="false" selection-start-line="77" selection-start-column="73" selection-end-line="77" selection-end-column="73" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/blog/service/impl/CategoryServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/assets/js/pages/commont.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="84" column="28" lean-forward="false" selection-start-line="84" selection-start-column="28" selection-end-line="84" selection-end-column="28" />
+        <state relative-caret-position="173">
+          <caret line="65" column="73" lean-forward="false" selection-start-line="65" selection-start-column="73" selection-end-line="65" selection-end-column="73" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/blog/service/impl/SysServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/assets/js/pages/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-257">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        <state relative-caret-position="245">
+          <caret line="77" column="73" lean-forward="false" selection-start-line="77" selection-start-column="73" selection-end-line="77" selection-end-column="73" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/blog/service/impl/NoteServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/assets/js/pages/note.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="96" column="52" lean-forward="true" selection-start-line="96" selection-start-column="52" selection-end-line="96" selection-end-column="52" />
-          <folding>
-            <element signature="method#getNoteLatestId#0;class#NoteServiceImpl#0" expanded="false" />
-            <element signature="method#listAllNotesWithPicture#0;class#NoteServiceImpl#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="185">
+          <caret line="114" column="54" lean-forward="false" selection-start-line="114" selection-start-column="54" selection-end-line="114" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/blog/service/impl/CommentServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logback-spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-36">
+          <caret line="4" column="37" lean-forward="false" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/note.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="59" column="70" lean-forward="true" selection-start-line="59" selection-start-column="70" selection-end-line="59" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="55" column="62" lean-forward="false" selection-start-line="55" selection-start-column="62" selection-end-line="55" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/comment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="59" column="62" lean-forward="false" selection-start-line="59" selection-start-column="62" selection-end-line="59" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/category.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="59" column="62" lean-forward="false" selection-start-line="59" selection-start-column="62" selection-end-line="59" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="52" column="20" lean-forward="true" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="76" column="122" lean-forward="true" selection-start-line="76" selection-start-column="122" selection-end-line="76" selection-end-column="122" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/assets/js/pages/article.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="23" column="46" lean-forward="true" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
-          <folding>
-            <element signature="e#884#885#0" expanded="true" />
-            <element signature="e#938#939#0" expanded="true" />
-          </folding>
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>

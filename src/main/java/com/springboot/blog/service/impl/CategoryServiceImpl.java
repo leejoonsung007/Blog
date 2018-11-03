@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 //category service
+@Service
 public class CategoryServiceImpl implements CategoryService {
 
     @Autowired

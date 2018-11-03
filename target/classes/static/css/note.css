@@ -28,5 +28,9 @@
 
 .table{
     background:rgba(229,235,242, 0.2);
-    border: 5px solid rgba(242, 242, 242, 0.8);
+    border: 2px solid rgba(242, 242, 242, 0.8);
+}
+
+.innerBorder{
+    border: 2px solid rgba(242, 242, 242, 0.8);
 }

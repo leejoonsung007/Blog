@@ -1,8 +1,10 @@
+var domain = document.domain;
+
 $(document).ready(function () {
 
     // fill the traffic data
     $.ajax({
-        url: "http://localhost:8080/admin/sys/view",
+        url: "http://ec2-52-201-210-120.compute-1.amazonaws.com" + ":8080/admin/sys/view",
         type: "GET",
         dataType: "json",
         success: function (json) {
@@ -20,7 +22,7 @@ $(document).ready(function () {
 
     // fill the log data
     $.ajax({
-        url: "http://localhost:8080/admin/sys/log",
+        url: "http://ec2-52-201-210-120.compute-1.amazonaws.com" + ":8080/admin/sys/log",
         type: "GET",
         dataType: "json",
         success: function (json) {
@@ -40,7 +42,7 @@ $(document).ready(function () {
 
     // fill the comment statistic data
     $.ajax({
-        url: "http://localhost:8080/api/comment/list",
+        url: "http://ec2-52-201-210-120.compute-1.amazonaws.com" + ":8080/api/comment/list",
         type: "GET",
         dataType: "json",
         success: function (json) {
@@ -73,7 +75,7 @@ $('#confirmBtn').click(function () {
     var id = $(this).attr("commentId");
     $.ajax({
         type: "DELETE",
-        url: "http://localhost:8080/admin/comment/" + id,
+        url: "http://ec2-52-201-210-120.compute-1.amazonaws.com" + ":8080/admin/comment/" + id,
         success: function () {
             // refresh
             location.reload();

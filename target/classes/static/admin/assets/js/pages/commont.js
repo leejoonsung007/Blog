@@ -1,8 +1,10 @@
+var domain = document.domain;
+
 $(document).ready(function() {
 	// fill the article data
 	$.ajax({
 		type: "get",
-		url: "http://localhost:8080/api/article/list",
+		url: "http://ec2-52-201-210-120.compute-1.amazonaws.com" + ":8080/api/article/list",
 		dataType: "json",
 		contentType: "application/json;charset=utf-8",
 		success: function(json) {
@@ -13,7 +15,6 @@ $(document).ready(function() {
 				}
 				$('#articleList').append('<option articleId="' + item.id + '">' + item.title + '</option>');
 			});
-			//			alert(firstArticleId);
 		}
 	});
 });
@@ -22,7 +23,7 @@ $(document).ready(function() {
 function addCommentList(id) {
 	$.ajax({
 		type: "get",
-		url: "http://localhost:8080/api/comment/article/" + id,
+		url: "http://ec2-52-201-210-120.compute-1.amazonaws.com" + ":8080/api/comment/article/" + id,
 		dataType: "json",
 		contentType: "application/json;charset=utf-8",
 		success: function(json) {
@@ -62,7 +63,7 @@ $('#confirmBtn').click(function() {
 	//	alert(id);
 	$.ajax({
 		type: "DELETE",
-		url: "http://localhost:8080/admin/comment/article/" + id,
+		url: "http://ec2-52-201-210-120.compute-1.amazonaws.com" + ":8080/admin/comment/article/" + id,
 		success: function() {
 			// refresh
 			location.reload();

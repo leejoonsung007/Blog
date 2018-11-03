@@ -2,7 +2,7 @@
 <configuration scan="true" scanPeriod="60 seconds" debug="false">
     <contextName>logback</contextName>
     <!--自己定义一个log.path用于说明日志的输出目录-->
-    <property name="log.path" value="/Users/leejoonsung/Downloads/MyBlog-master/src/main/resources/log/wmyskxz"/>
+    <property name="log.path" value="/home/ec2-user/log"></property>
     <!--输出到控制台-->
     <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
         <!-- <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
@@ -13,7 +13,7 @@
         </encoder>
     </appender>
 
-    <!--输出到文件-->
+    <!--output-->
     <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <fileNamePattern>${log.path}/logback.%d{yyyy-MM-dd}.log</fileNamePattern>

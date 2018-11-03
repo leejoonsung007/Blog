@@ -1,6 +1,8 @@
+var domain = document.domain;
+
 window.onload = function () {
     $.ajax({
-        url: "http://localhost:8080/api/category/list/",
+        url: "localhost" + ":8080/api/category/list/",
         type: "GET",
         dataType: "json",
         success: function (json) {
@@ -47,7 +49,7 @@ function showAllArticleInfo() {
 
     $.ajax({
         type: "get",
-        url: "http://localhost:8080/api/article/list",
+        url: "localhost" + ":8080/api/article/list",
         dataType: "json",
         success: function (json) {
             $.each(json, function (i, item) {
@@ -69,7 +71,7 @@ function showAllArticleInfo() {
 function showArticleByCategoryId(id) {
     $.ajax({
         type: "get",
-        url: "http://localhost:8080/api/article/list/sort/" + id,
+        url: "localhost" + ":8080/api/article/list/sort/" + id,
         dataType: "json",
         success: function (json) {
             $.each(json, function (i, item) {

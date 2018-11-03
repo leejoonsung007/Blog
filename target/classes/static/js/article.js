@@ -1,10 +1,12 @@
+var domain = document.domain;
+
 window.onload = function () {
     var articleId = getQueryVariable("articleId");
 
     // add article
     $.ajax({
         type: "get",
-        url: "http://localhost:8080/api/article/" + articleId,
+        url: "http://ec2-52-201-210-120.compute-1.amazonaws.com" + ":8080/api/article/" + articleId,
         dataType: "json",
         success: function (json) {
             $("#articleTitle").html(json.title);
@@ -18,7 +20,7 @@ window.onload = function () {
     // add comment
     $.ajax({
         type: "get",
-        url: "http://localhost:8080/api/comment/article/" + articleId,
+        url: "http://ec2-52-201-210-120.compute-1.amazonaws.com" + ":8080/api/comment/article/" + articleId,
         dataType: "json",
         success: function (json) {
             $.each(json, function (i, item) {
@@ -68,7 +70,7 @@ $('#addComment').click(function () {
     }
 
     $.ajax({
-        url: "http://localhost:8080/api/comment/article/" + articleId,
+        url: "http://ec2-52-201-210-120.compute-1.amazonaws.com" + ":8080/api/comment/article/" + articleId,
         type: "POST",
         dataType: "json",
         contentType: "application/json;charset=utf-8",

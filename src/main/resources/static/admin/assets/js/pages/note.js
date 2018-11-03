@@ -1,9 +1,11 @@
+var domain = document.domain;
+
 $(document).ready(function () {
 
     // fill the update blog page
     $.ajax({
         type: "get",
-        url: "http://localhost:8080/api/note/list",
+        url: "localhost" + ":8080/api/note/list",
         dataType: "json",
         success: function (json) {
             $.each(json, function (i, item) {
@@ -34,7 +36,7 @@ $('#confirmBtn').click(function () {
     var id = $(this).attr("noteId");
     $.ajax({
         type: "DELETE",
-        url: "http://localhost:8080/admin/note/" + id,
+        url: "localhost" + ":8080/admin/note/" + id,
         success: function () {
             // refresh
             location.reload();
@@ -47,7 +49,7 @@ function updateNote(id) {
     $('#updateBtn').attr("noteId", id);
     $.ajax({
         type: "get",
-        url: "http://localhost:8080/admin/note/" + id,
+        url: "localhost" + ":8080/admin/note/" + id,
         dataType: "json",
         async: false,
         success: function (json) {
@@ -81,7 +83,7 @@ $('#updateBtn').click(function () {
     };
     $.ajax({
         type: "PUT",
-        url: "http://localhost:8080/admin/note/" + noteId,
+        url: "localhost" + ":8080/admin/note/" + noteId,
         dataType: "json",
         contentType: "application/json;charset=utf-8",
         data: JSON.stringify(note),
@@ -108,7 +110,7 @@ $('#addNoteBtn').click(function () {
     };
     $.ajax({
         type: "POST",
-        url: "http://localhost:8080/admin/note/",
+        url: "localhost" + ":8080/admin/note/",
         dataType: "json",
         contentType: "application/json;charset=utf-8",
         data: JSON.stringify(note),

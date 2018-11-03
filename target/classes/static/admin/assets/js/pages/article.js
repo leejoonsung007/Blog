@@ -1,7 +1,9 @@
+var domain = document.domain;
+
 $(document).ready(function () {
     // fill the category data of the article
     $.ajax({
-        url: "http://localhost:8080/api/category/list",
+        url: "http://ec2-52-201-210-120.compute-1.amazonaws.com" + ":8080/api/category/list",
         type: "GET",
         dataType: "json",
         success: function (json) {
@@ -15,7 +17,7 @@ $(document).ready(function () {
     // fill the blog page
     $.ajax({
         type: "get",
-        url: "http://localhost:8080/api/article/list",
+        url: "http://ec2-52-201-210-120.compute-1.amazonaws.com" + ":8080/api/article/list",
         dataType: "json",
         success: function (json) {
             $.each(json, function (i, item) {
@@ -40,17 +42,17 @@ document.getElementById("articleCategories").onchange = function () {
     var categoryId = $('#articleCategories option:selected').attr("categoryId");
     //	alert(categoryId);
     if (categoryId === "") {
-        var url = "http://localhost:8080/api/article/list";
+        var url = "http://ec2-52-201-210-120.compute-1.amazonaws.com" + ":8080/api/article/list";
     } else {
-        var url = "http://localhost:8080/api/article/list/sort/" + categoryId;
+        var url =  "http://ec2-52-201-210-120.compute-1.amazonaws.com" + ":8080/api/article/list/sort/" + categoryId;
     }
-    // 填充博文分类信息
+    // get category info
     $.ajax({
         url: url,
         type: "GET",
         dataType: "json",
         success: function (json) {
-            // 先清空博文数据
+            // clear data first
             $('#tbody-articles').html("");
             $.each(json, function (i, item) {
                 $('#tbody-articles').append(
@@ -79,7 +81,7 @@ $('#confirmBtn').click(function () {
     var id = $(this).attr("articleId");
     $.ajax({
         type: "DELETE",
-        url: "http://localhost:8080/admin/article/" + id,
+        url: "http://ec2-52-201-210-120.compute-1.amazonaws.com" + ":8080/admin/article/" + id,
         success: function () {
             // refresh
             location.reload();
@@ -92,7 +94,7 @@ function updateArticle(id) {
     $('#updateBtn').attr("articleId", id);
     $.ajax({
         type: "get",
-        url: "http://localhost:8080/admin/article/" + id,
+        url: "http://ec2-52-201-210-120.compute-1.amazonaws.com" + ":8080/admin/article/" + id,
         dataType: "json",
         async: false,
         success: function (json) {
@@ -103,7 +105,7 @@ function updateArticle(id) {
             }
             // fill in category data
             $.ajax({
-                url: "http://localhost:8080/api/category/list",
+                url: "http://ec2-52-201-210-120.compute-1.amazonaws.com" + ":8080/api/category/list",
                 type: "GET",
                 dataType: "json",
                 async: false,
@@ -151,7 +153,7 @@ $('#updateBtn').click(function () {
     }
     $.ajax({
         type: "PUT",
-        url: "http://localhost:8080/admin/article/" + articleId,
+        url: "http://ec2-52-201-210-120.compute-1.amazonaws.com" + ":8080/admin/article/" + articleId,
         dataType: "json",
         contentType: "application/json;charset=utf-8",
         data: JSON.stringify(article),
@@ -183,7 +185,7 @@ $('#addArticleBtn').click(function () {
     }
     $.ajax({
         type: "POST",
-        url: "http://localhost:8080/admin/article/",
+        url: "http://ec2-52-201-210-120.compute-1.amazonaws.com" + ":8080/admin/article/",
         dataType: "json",
         contentType: "application/json;charset=utf-8",
         data: JSON.stringify(article),

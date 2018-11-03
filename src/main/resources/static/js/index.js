@@ -1,6 +1,8 @@
+var domain = document.domain;
+
 window.onload = function() {
 	$.ajax({
-		url: "http://localhost:8080/api/article/list/latest",
+		url: "localhost" + ":8080/api/article/list/latest",
 		type: "GET",
 		dataType: "json",
 		success: function(json) {
@@ -24,7 +26,7 @@ window.onload = function() {
 	});
 
 	$.ajax({
-		url:"http://localhost:8080/api/note/latest",
+		url: "localhost" + ":8080/api/note/latest",
 		type:"GET",
 		dataType:"json",
 		success:function (json) {

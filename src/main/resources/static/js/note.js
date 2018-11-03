@@ -1,8 +1,10 @@
+var domain = document.domain;
+
 window.onload = function () {
     // add note
     $.ajax({
         type: "get",
-        url: "http://localhost:8080/api/note/list",
+        url: "localhost" + ":8080/api/note/list",
         dataType: "json",
         success: function (json) {
             $.each(json, function (i, item) {
