@@ -1,7 +1,7 @@
 # Blog System
 The Blog is under construction, I want to add more features to this system...
 
-[![Visit Website](https://img.shields.io/badge/website-visit-blue.svg)](www.leejoonsung007.com) 
+[![Visit Website](https://img.shields.io/badge/website-open-blue.svg)](http://www.leejoonsung007.com) 
 
 ## Table of Contents
 1. [Introduction](https://github.com/leejoonsung007/School/#introdution)
