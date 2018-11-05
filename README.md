@@ -1,5 +1,5 @@
 # Blog System
-The Blog is under construction, I want to add more features to this system...
+The Blog is under construction, more features for this system will release in the future...
 
 [![Visit Website](https://img.shields.io/badge/website-open-blue.svg)](http://www.leejoonsung007.com) 
 
