@@ -1,6 +1,8 @@
 # Blog System
 The Blog is under construction, more features for this system will release in the future...
 
+New Feature: when someone leaves a message for me, it will aotomatically send a notification to my email ~
+
 [![Visit Website](https://img.shields.io/badge/website-open-blue.svg)](http://www.leejoonsung007.com) 
 
 ## Table of Contents
